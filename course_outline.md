@@ -37,10 +37,17 @@
 - Rows and cells: \<tr>, \<td>, \<th>, 
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
-### Lesson 7: Basic Forms
-- Forms: \<form>, \<input>, \<label>, \<textarea>, \<select>, \<option>, \<button>
+### Lesson 7: Basic Forms - Structure and Input Types
+- Form structure: \<form>
+- Basic input types: \<input> (text, email, password, number)
+- Labels and accessibility: \<label>
 - Name, type, placeholder, and label association
-### Lesson 8: Divs, Spans, and Semantic Structure
+### Lesson 8: Advanced Form Elements
+- Text areas: \<textarea>
+- Dropdown menus: \<select> and \<option>
+- Form submission: \<button>
+- Form validation attributes
+### Lesson 9: Divs, Spans, and Semantic Structure
 - Grouping with \<div> and inline grouping with <span>
 - Semantic tags: \<header>, \<footer>, \<main>, \<article>, \<section>, \<nav>
 - Why semantic HTML matters for accessibility and structure
