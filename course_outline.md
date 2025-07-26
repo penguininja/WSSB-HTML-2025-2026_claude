@@ -15,8 +15,9 @@
 - Paragraphs: \<p>
 - Line breaks: \<br>
 ### Lesson 4: Text Formatting
-- Horizontal rule: \<hr>
 - Emphasizing text: \<strong>, \<em>
+- Horizontal rule: \<hr>
+- Preformatted text: \<pre>
 ### Lesson 3: Links and Navigation
 - Anchor tag: \<a href="">
 - Absolute vs. relative URLs

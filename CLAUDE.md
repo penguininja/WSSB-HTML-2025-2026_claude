@@ -25,9 +25,12 @@ This is a static HTML educational repository with no build process, testing fram
 
 ## Content Standards
 
-- All HTML files should be valid HTML5 with proper DOCTYPE declarations
+- All HTML files should be valid HTML5, but do not need to have doctype, body, or html tags
 - Include educational comments explaining concepts and best practices
+- All educational content including section headings for the lesson should be in comments, not h1-h6 tags
+- The only HTML besides comments in the lesson should be examples
 - Lab exercises should include clear instructions in HTML comments
+- Lab solutions should have valid doctype, body, and html tags
 - Solutions demonstrate proper semantic HTML structure and accessibility practices
 - Focus on progressive learning from basic document structure to semantic elements
 
