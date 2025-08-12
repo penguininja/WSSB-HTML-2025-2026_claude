@@ -19,6 +19,9 @@
 - Document sections: `<html>`, `<head>`, `<body>`
 - Creating and saving your first complete HTML document
 
+### Lesson 4 (or later?): Web Inspector and W3 Validator
+- https://validator.w3.org/nu/#textarea
+
 ## Unit 2: HTML Essentials
 ### Lesson 1: HTML Basics & Document Structure
 - What is HTML?
