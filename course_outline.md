@@ -1,7 +1,27 @@
 # WSSB Web Development Course 2025-2026 Curriculum Outline
 ## Unit 1: Introduction to HTML and Notepad++
-### Lesson 1: Placeholder
-### Lesson 2: Notepad++ Setup
+
+### Lesson 1: What is HTML and the Web?
+- What is HTML (HyperText Markup Language)?
+- HTML as the structure/skeleton of web pages
+- Understanding file extensions (.html)
+- Viewing source code in browsers
+
+### Lesson 2: Development Environment Setup
+- Installing and configuring Notepad++
+- Setting up file associations for .html files
+- Creating your first folder structure for web development
+- Browser basics: opening local files
+
+### Lesson 3: HTML Document Structure and Anatomy
+- The anatomy of an HTML document
+- DOCTYPE declaration: `<!DOCTYPE html>`
+- Document sections: `<html>`, `<head>`, `<body>`
+- Creating and saving your first complete HTML document
+
+### Lesson 4 (or later?): Web Inspector and W3 Validator
+- https://validator.w3.org/nu/#textarea
+
 ## Unit 2: HTML Essentials
 ### Lesson 1: HTML Basics & Document Structure
 - What is HTML?
@@ -35,7 +55,7 @@
 - Inline quotes: \<q>
 ### Lesson 6: Tables
 - Tables: \<table>
-- Rows and cells: \<tr>, \<td>, \<th>, 
+- Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
 ### Lesson 7: Basic Forms - Structure and Input Types
