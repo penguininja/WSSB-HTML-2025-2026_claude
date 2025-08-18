@@ -6,16 +6,16 @@
 - What elements make up a web page? (navigation, headings, content, etc.)
 - How do browsers "render" web pages?
 
-### Lesson 2: Development Environment Setup
+### Lesson 2: Introduction to HTML
+- What is HTML (HyperText Markup Language)?
+- HTML as the structure/skeleton of web pages
+- Preview of CSS and JS
+
+### Lesson 3: Development Environment Setup
 - Configuring Notepad++
 - Understanding file extensions (.html)
 - Setting up application associations for .html files
 - Browser basics: opening local files
-
-### Lesson 3: Introduction to HTML
-- What is HTML (HyperText Markup Language)?
-- HTML as the structure/skeleton of web pages
-- Preview of CSS and JS
 
 ### Lesson 4: Explore an Example HTML Project
 - The anatomy of an HTML document
