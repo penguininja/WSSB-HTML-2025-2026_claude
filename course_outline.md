@@ -28,7 +28,9 @@
 
 ## Unit 2: HTML Essentials
 ### Lesson 1: HTML Basics & Document Structure
+- What is a tag?
 - Adding comments with \<!-- comment -->
+- More detailed overview of DOCTYPE and document tags
 - Creating and saving your first complete HTML document
 
 ### Lesson 2: Headings
