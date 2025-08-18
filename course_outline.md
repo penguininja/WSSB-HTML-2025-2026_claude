@@ -59,42 +59,52 @@
 - Preformatted text: \<pre>
 
 ### Lesson 5: Links and Navigation
+- https://www.w3schools.com/html/html_links.asp
 - Anchor tag: \<a href="">
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
 - Creating simple navigation menus with links
 
 ### Lesson 6: Images and Alt Text
+- https://www.w3schools.com/html/html_images.asp
 - Image tag: \<img src="" alt="">
 - Best practices for image accessibility
 - Local vs. online image sources
 
-### Lesson 7: Lists and Quotes
+### Lesson 7: Lists
+- https://www.w3schools.com/html/html_lists.asp
 - Unordered lists: \<ul> and \<li>
 - Ordered lists: \<ol> and \<li>
 - Nested lists
+
+### Lesson 8: Quotes
+- https://www.w3schools.com/html/html_quotation_elements.asp
 - Block quotes: \<blockquote>
 - Inline quotes: \<q>
 
-### Lesson 8: Tables
+### Lesson 9: Tables
+- https://www.w3schools.com/html/html_tables.asp
 - Tables: \<table>
 - Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
 
-### Lesson 9: Basic Forms - Structure and Input Types
+### Lesson 10: Basic Forms - Structure and Input Types
+- https://www.w3schools.com/html/html_forms.asp
 - Form structure: \<form>
 - Basic input types: \<input> (text, email, password, number)
 - Labels and accessibility: \<label>
 - Name, type, placeholder, and label association
 
-### Lesson 10: Advanced Form Elements
+### Lesson 11: Advanced Form Elements
+- https://www.w3schools.com/html/html_forms.asp
 - Text areas: \<textarea>
 - Dropdown menus: \<select> and \<option>
 - Form submission: \<button>
 - Form validation attributes
 
-### Lesson 11: Divs, Spans, and Semantic Structure
+### Lesson 12: Divs, Spans, and Semantic Structure
+- https://www.w3schools.com/html/html_div.asp
 - Grouping with \<div> and inline grouping with <span>
 - Semantic tags: \<header>, \<footer>, \<main>, \<article>, \<section>, \<nav>
 - Why semantic HTML matters for accessibility and structure
