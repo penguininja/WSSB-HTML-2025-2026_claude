@@ -7,8 +7,10 @@
 - How do browsers "render" web pages?
 
 ### Lesson 2: Introduction to HTML
+- https://www.w3schools.com/html/html_intro.asp
 - What is HTML (HyperText Markup Language)?
 - HTML as the structure/skeleton of web pages
+- What are elements?
 - Preview of CSS and JS
 
 ### Lesson 3: Development Environment Setup
@@ -28,9 +30,10 @@
 
 ## Unit 2: HTML Essentials
 ### Lesson 1: HTML Basics & Document Structure
+- https://www.w3schools.com/html/html_basic.asp
 - What is a tag?
 - Adding comments with \<!-- comment -->
-- More detailed overview of DOCTYPE and document tags
+- More detailed overview of HTML stucture (DOCTYPE and document tags)
 - Creating and saving your first complete HTML document
 
 ### Lesson 2: Headings
