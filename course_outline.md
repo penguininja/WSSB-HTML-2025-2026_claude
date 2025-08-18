@@ -51,50 +51,50 @@
 - https://www.w3schools.com/html/html_paragraphs.asp
 - Paragraphs: \<p>
 - Line breaks: \<br>
-  
+
 ### Lesson 4: Text Formatting
 - https://www.w3schools.com/html/html_formatting.asp
 - Emphasizing text: \<strong>, \<em>
 - Horizontal rule: \<hr>
 - Preformatted text: \<pre>
-  
+
 ### Lesson 5: Links and Navigation
 - Anchor tag: \<a href="">
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
 - Creating simple navigation menus with links
-  
+
 ### Lesson 6: Images and Alt Text
 - Image tag: \<img src="" alt="">
 - Best practices for image accessibility
 - Local vs. online image sources
-  
+
 ### Lesson 7: Lists and Quotes
 - Unordered lists: \<ul> and \<li>
 - Ordered lists: \<ol> and \<li>
 - Nested lists
 - Block quotes: \<blockquote>
 - Inline quotes: \<q>
-  
+
 ### Lesson 8: Tables
 - Tables: \<table>
 - Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
-  
+
 ### Lesson 9: Basic Forms - Structure and Input Types
 - Form structure: \<form>
 - Basic input types: \<input> (text, email, password, number)
 - Labels and accessibility: \<label>
 - Name, type, placeholder, and label association
-  
+
 ### Lesson 10: Advanced Form Elements
 - Text areas: \<textarea>
 - Dropdown menus: \<select> and \<option>
 - Form submission: \<button>
 - Form validation attributes
-  
-### Lesson 9: Divs, Spans, and Semantic Structure
+
+### Lesson 11: Divs, Spans, and Semantic Structure
 - Grouping with \<div> and inline grouping with <span>
 - Semantic tags: \<header>, \<footer>, \<main>, \<article>, \<section>, \<nav>
 - Why semantic HTML matters for accessibility and structure
