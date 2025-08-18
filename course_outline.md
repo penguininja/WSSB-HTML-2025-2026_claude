@@ -71,39 +71,45 @@
 - Best practices for image accessibility
 - Local vs. online image sources
 
-### Lesson 7: Lists
+### Lesson 7: Audio
+- https://www.w3schools.com/html/html5_audio.asp
+- Audio tag: \<audio controls>
+- Attributes: controls, audio
+- Local vs. online audio sources
+
+### Lesson 8: Lists
 - https://www.w3schools.com/html/html_lists.asp
 - Unordered lists: \<ul> and \<li>
 - Ordered lists: \<ol> and \<li>
 - Nested lists
 
-### Lesson 8: Quotes
+### Lesson 9: Quotes
 - https://www.w3schools.com/html/html_quotation_elements.asp
 - Block quotes: \<blockquote>
 - Inline quotes: \<q>
 
-### Lesson 9: Tables
+### Lesson 10: Tables
 - https://www.w3schools.com/html/html_tables.asp
 - Tables: \<table>
 - Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
 
-### Lesson 10: Basic Forms - Structure and Input Types
+### Lesson 11: Basic Forms - Structure and Input Types
 - https://www.w3schools.com/html/html_forms.asp
 - Form structure: \<form>
 - Basic input types: \<input> (text, email, password, number)
 - Labels and accessibility: \<label>
 - Name, type, placeholder, and label association
 
-### Lesson 11: Advanced Form Elements
+### Lesson 12: Advanced Form Elements
 - https://www.w3schools.com/html/html_forms.asp
 - Text areas: \<textarea>
 - Dropdown menus: \<select> and \<option>
 - Form submission: \<button>
 - Form validation attributes
 
-### Lesson 12: Divs, Spans, and Semantic Structure
+### Lesson 13: Divs, Spans, and Semantic Structure
 - https://www.w3schools.com/html/html_div.asp
 - Grouping with \<div> and inline grouping with <span>
 - Semantic tags: \<header>, \<footer>, \<main>, \<article>, \<section>, \<nav>
