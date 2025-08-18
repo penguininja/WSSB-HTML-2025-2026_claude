@@ -58,37 +58,37 @@
 - Horizontal rule: \<hr>
 - Preformatted text: \<pre>
   
-### Lesson 3: Links and Navigation
+### Lesson 5: Links and Navigation
 - Anchor tag: \<a href="">
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
 - Creating simple navigation menus with links
   
-### Lesson 4: Images and Alt Text
+### Lesson 6: Images and Alt Text
 - Image tag: \<img src="" alt="">
 - Best practices for image accessibility
 - Local vs. online image sources
   
-### Lesson 5: Lists and Quotes
+### Lesson 7: Lists and Quotes
 - Unordered lists: \<ul> and \<li>
 - Ordered lists: \<ol> and \<li>
 - Nested lists
 - Block quotes: \<blockquote>
 - Inline quotes: \<q>
   
-### Lesson 6: Tables
+### Lesson 8: Tables
 - Tables: \<table>
 - Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
   
-### Lesson 7: Basic Forms - Structure and Input Types
+### Lesson 9: Basic Forms - Structure and Input Types
 - Form structure: \<form>
 - Basic input types: \<input> (text, email, password, number)
 - Labels and accessibility: \<label>
 - Name, type, placeholder, and label association
   
-### Lesson 8: Advanced Form Elements
+### Lesson 10: Advanced Form Elements
 - Text areas: \<textarea>
 - Dropdown menus: \<select> and \<option>
 - Form submission: \<button>
