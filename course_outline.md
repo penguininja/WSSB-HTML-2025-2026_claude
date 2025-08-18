@@ -1,6 +1,13 @@
 # WSSB Web Development Course 2025-2026 Curriculum Outline
 ## Unit 1: Introduction to HTML and Notepad++
 
+### Lesson 0: Course Overview
+- Syllabus overview
+- Creating dynamic websites
+- Web best practices
+- Accessibility
+- Final project: Custom interactive website
+
 ### Lesson 1: Introduction to Websites
 - What is the web?
 - What elements make up a web page? (navigation, headings, content, etc.)
