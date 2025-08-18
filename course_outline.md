@@ -37,13 +37,16 @@
 - Creating and saving your first complete HTML document
 
 ### Lesson 2: Headings
+- https://www.w3schools.com/html/html_headings.asp
 - Semantic heading tags: \<h1> through \<h6>
 
 ### Lesson 3: Paragraphs, and Line Breaks
+- https://www.w3schools.com/html/html_paragraphs.asp
 - Paragraphs: \<p>
 - Line breaks: \<br>
   
 ### Lesson 4: Text Formatting
+- https://www.w3schools.com/html/html_formatting.asp
 - Emphasizing text: \<strong>, \<em>
 - Horizontal rule: \<hr>
 - Preformatted text: \<pre>
