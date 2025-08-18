@@ -3,7 +3,7 @@
 
 ### Lesson 1: Introduction to Websites
 - What is the web?
-- What elements make up a web page?
+- What elements make up a web page? (navigation, headings, content, etc.)
 - How do browsers "render" web pages?
 
 ### Lesson 2: Introduction to HTML
@@ -12,15 +12,16 @@
 - Preview of CSS and JS
 
 ### Lesson 3: Development Environment Setup
-- Installing and configuring Notepad++
-- Setting up file associations for .html files
+- Configuring Notepad++
 - Understanding file extensions (.html)
+- Setting up application associations for .html files
 - Browser basics: opening local files
 
-### Lesson 4: Explore an example HTML project
+### Lesson 4: Explore an Example HTML Project
 - The anatomy of an HTML document
 - DOCTYPE declaration: `<!DOCTYPE html>`
 - Document sections: `<html>`, `<head>`, `<body>`
+- Example tags: `<h1>`, `<p>`, `<ul>`
 
 ### Lesson 5 (or later?): Web Inspector and W3 Validator
 - https://validator.w3.org/nu/#textarea
