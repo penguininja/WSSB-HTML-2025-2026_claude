@@ -87,16 +87,16 @@
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
 
-### Lesson 8: Lists
+### Lesson 3: Lists
 - https://www.w3schools.com/html/html_lists.asp
 - Unordered lists: \<ul> and \<li>
 - Ordered lists: \<ol> and \<li>
 - Nested lists
 
-### Lesson 3: Navigation
+### Lesson 4: Navigation
 - Creating simple navigation menus with links
 
-## Unit 4: Media
+## Unit 5: Media
 
 ### Lesson 1: Images and Alt Text
 - https://www.w3schools.com/html/html_images.asp
@@ -112,7 +112,7 @@
 
 ### Lesson 3: Video
 
-## Unit 4: Advanced Content
+## Unit 6: Tables
 
 ### Lesson 1: Tables
 - https://www.w3schools.com/html/html_tables.asp
@@ -121,7 +121,7 @@
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
 
-## Unit 5: Forms
+## Unit 7: Forms
 
 ### Lesson 1: Basic Forms - Structure and Input Types
 - https://www.w3schools.com/html/html_forms.asp
@@ -137,7 +137,7 @@
 - Form submission: \<button>
 - Form validation attributes
 
-## Unit 6: Content Organization and Semantic Structure
+## Unit 8: Content Organization and Semantic Structure
 
 ### Lesson 1: Divs, Spans, and Semantic Structure
 - https://www.w3schools.com/html/html_div.asp
