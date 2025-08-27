@@ -69,6 +69,10 @@
 - Block quotes: \<blockquote>
 - Inline quotes: \<q>
 
+### Lesson 5: Comments
+- https://www.w3schools.com/html/html_comments.asp
+- Writing comments with `<!-- comment -->`
+
 ## Unit 4: Links and Navigation
 
 ### Lesson 1: Attributes
