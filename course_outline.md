@@ -72,7 +72,13 @@
 - Block quotes: `<blockquote>`
 - Inline quotes: `<q>`
 
-### Lesson 5: Comments
+### Lesson 5: Lists
+- https://www.w3schools.com/html/html_lists.asp
+- Unordered lists: `<ul>` and `<li>`
+- Ordered lists: `<ol>` and `<li>`
+- Nested lists
+
+### Lesson 6: Comments
 - https://www.w3schools.com/html/html_comments.asp
 - Writing comments with `<!-- comment -->`
 
@@ -87,13 +93,7 @@
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
 
-### Lesson 3: Lists
-- https://www.w3schools.com/html/html_lists.asp
-- Unordered lists: `<ul>` and `<li>`
-- Ordered lists: `<ol>` and `<li>`
-- Nested lists
-
-### Lesson 4: Navigation
+### Lesson 3: Navigation
 - Creating simple navigation menus with links
 
 ## Unit 5: Media
