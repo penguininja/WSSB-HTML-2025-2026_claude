@@ -36,16 +36,25 @@
 - https://validator.w3.org/nu/#textarea
 
 ## Unit 2: HTML Essentials
-### Lesson 1: HTML Basics & Document Structure
-- https://www.w3schools.com/html/html_basic.asp
+### Lesson 1: HTML Elements
+- https://www.w3schools.com/html/html_elements.asp
+- What is an element?
 - What is a tag?
-- Adding comments with \<!-- comment -->
-- More detailed overview of HTML stucture (DOCTYPE and document tags)
+- Opening and closing tags
+- Nested elements
+
+### Lesson2: Document Structure
+- https://www.w3schools.com/html/html_basic.asp
+- HTML document structure
+- DOCTYPE declaration `<!DOCTYPE html>`
+- Document sections: `<html>`, `<head>`, `<body>`
 - Creating and saving your first complete HTML document
 
-### Lesson 2: Headings
+## Unit 3: Text Content
+
+### Lesson 3: Headings
 - https://www.w3schools.com/html/html_headings.asp
-- Semantic heading tags: \<h1> through \<h6>
+- Semantic heading tags: `<h1>` through `<h6>`
 
 ### Lesson 3: Paragraphs, and Line Breaks
 - https://www.w3schools.com/html/html_paragraphs.asp
@@ -58,12 +67,40 @@
 - Horizontal rule: \<hr>
 - Preformatted text: \<pre>
 
+### Lesson 9: Quotes
+- https://www.w3schools.com/html/html_quotation_elements.asp
+- Block quotes: \<blockquote>
+- Inline quotes: \<q>
+
+## Unit 4: Links and Navigation
+
+### Lesson 5: Attributes
+- https://www.w3schools.com/html/html_attributes.asp
+
+### Lesson 5: Links
+- https://www.w3schools.com/html/html_links.asp
+- Anchor tag: \<a href="">
+- Absolute vs. relative URLs
+- target="_blank" and link accessibility tips
+
+### Lesson 6: Navigation
+
 ### Lesson 5: Links and Navigation
 - https://www.w3schools.com/html/html_links.asp
 - Anchor tag: \<a href="">
 - Absolute vs. relative URLs
 - target="_blank" and link accessibility tips
+
+### Lesson 8: Lists
+- https://www.w3schools.com/html/html_lists.asp
+- Unordered lists: \<ul> and \<li>
+- Ordered lists: \<ol> and \<li>
+- Nested lists
+
+### Lesson 3: Navigation
 - Creating simple navigation menus with links
+
+## Unit 4: Media
 
 ### Lesson 6: Images and Alt Text
 - https://www.w3schools.com/html/html_images.asp
@@ -77,16 +114,9 @@
 - Attributes: controls, audio
 - Local vs. online audio sources
 
-### Lesson 8: Lists
-- https://www.w3schools.com/html/html_lists.asp
-- Unordered lists: \<ul> and \<li>
-- Ordered lists: \<ol> and \<li>
-- Nested lists
+### Lesson 8: Video
 
-### Lesson 9: Quotes
-- https://www.w3schools.com/html/html_quotation_elements.asp
-- Block quotes: \<blockquote>
-- Inline quotes: \<q>
+## Unit 4: Advanced Content
 
 ### Lesson 10: Tables
 - https://www.w3schools.com/html/html_tables.asp
@@ -94,6 +124,8 @@
 - Rows and cells: \<tr>, \<td>, \<th>,
 - Headers and footers: \<thead>, \<tbody>, \<tfoot>, \<caption>
 - Keyboard shortcuts
+
+## Unit 5: Forms
 
 ### Lesson 11: Basic Forms - Structure and Input Types
 - https://www.w3schools.com/html/html_forms.asp
@@ -108,6 +140,8 @@
 - Dropdown menus: \<select> and \<option>
 - Form submission: \<button>
 - Form validation attributes
+
+## Unit 6: Content Organization
 
 ### Lesson 13: Divs, Spans, and Semantic Structure
 - https://www.w3schools.com/html/html_div.asp
