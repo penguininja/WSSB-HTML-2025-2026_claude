@@ -32,9 +32,6 @@
 - Document sections: `<html>`, `<head>`, `<body>`
 - Example tags: `<h1>`, `<p>`, `<ul>`
 
-### Lesson 5 (or later?): Web Inspector and W3 Validator
-- https://validator.w3.org/nu/#textarea
-
 ## Unit 2: HTML Essentials
 ### Lesson 1: HTML Elements
 - https://www.w3schools.com/html/html_elements.asp
@@ -141,10 +138,13 @@
 - Form submission: \<button>
 - Form validation attributes
 
-## Unit 6: Content Organization
+## Unit 6: Content Organization and Semantic Structure
 
 ### Lesson 13: Divs, Spans, and Semantic Structure
 - https://www.w3schools.com/html/html_div.asp
 - Grouping with \<div> and inline grouping with <span>
 - Semantic tags: \<header>, \<footer>, \<main>, \<article>, \<section>, \<nav>
 - Why semantic HTML matters for accessibility and structure
+
+### Lesson 14: Web Inspector and W3 Validator
+- https://validator.w3.org/nu/#textarea
