@@ -47,6 +47,9 @@
 - Document sections: `<html>`, `<head>`, `<body>`
 - Creating and saving your first complete HTML document
 
+### Lesson 3: Page Title
+- https://www.w3schools.com/html/html_page_title.asp
+
 ## Unit 3: Text Content
 
 ### Lesson 1: Headings
