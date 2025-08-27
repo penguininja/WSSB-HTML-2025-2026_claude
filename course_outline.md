@@ -95,6 +95,7 @@
 
 ### Lesson 3: Navigation
 - Creating simple navigation menus with links
+- Using IDs in links
 
 ## Unit 5: Media
 
