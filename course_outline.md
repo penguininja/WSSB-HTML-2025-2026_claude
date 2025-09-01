@@ -3,10 +3,8 @@
 
 ### Lesson 0: Course Overview
 - Syllabus overview
-- Creating dynamic websites
-- Web best practices
-- Accessibility
-- Final project: Custom interactive website
+- Final project introduction: Custom interactive website
+- Questions about the course?
 
 ### Lesson 1: Introduction to Websites
 - What is the web?
