@@ -37,11 +37,11 @@ By the end of this course, students will be able to:
 ## Units and Lessons
 
 ### Unit 1: Introduction to HTML and Notepad++
-- Lesson 0: Course overview, goals, and capstone introduction
-- Lesson 1: What is the web? Elements of a webpage, how browsers render pages  
-- Lesson 2: Introduction to HTML and its role as page structure  
-- Lesson 3: Setting up Notepad++, saving `.html` files, opening in browsers  
-- Lesson 4: Explore an example HTML project (tags, structure, DOCTYPE)  
+- Course overview, goals, and capstone introduction
+- What is the web? Elements of a webpage
+- Introduction to HTML
+- Setting up Notepad++, saving and opening HTML files
+- Explore an example HTML project
 
 ### Unit 2: HTML Essentials
 - Elements, tags, and nesting  
