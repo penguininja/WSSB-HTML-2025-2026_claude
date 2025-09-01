@@ -2,7 +2,7 @@
 - **Instructor:** Jerry Miller-Price
 - **Volunteers:** Candice, John, Teresa, and Jenny
 - **School:** Washington State School for the Blind  
-- **Format:** In-person, hands-on lab, with accessible materials
+- **Format:** In-person, hands-on lab with capstone project
 - **Final Project:** A custom interactive website  
 
 ---
@@ -17,11 +17,11 @@ By the end of this course, students will be able to:
 
 - Understand how the web works
 - Write, structure, and debug valid HTML code.  
-- Use semantic HTML to create accessible, well-organized web content.  
+- Use semantic HTML to create well-organized web content.  
 - Incorporate text, links, media, and forms into web pages.  
 - Apply accessibility best practices, including alt text and semantic structure.  
 - Use web inspector tools and validators to check and improve code.  
-- Build and present a complete, accessible website as a final project.  
+- Build and present a complete, interactive website as a final project.  
 
 ---
 
