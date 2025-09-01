@@ -1,6 +1,6 @@
 # Web Development with HTML 
-- **Instructor:* Jerry Miller-Price
-- **Volunteers:* Candice, John, Teresa, and Jenny
+- **Instructor:** Jerry Miller-Price
+- **Volunteers:** Candice, John, Teresa, and Jenny
 - **School:** Washington State School for the Blind  
 - **Format:** In-person, hands-on lab, with accessible materials
 - **Final Project:** A custom interactive website  
