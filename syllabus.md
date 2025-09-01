@@ -79,6 +79,16 @@ By the end of this course, students will be able to:
 - Divs, spans, semantic HTML5 structure (`<header>`, `<main>`, `<section>`, etc.)  
 - Using browser inspector and W3 validator
 
+### Stretch Goal 1: CSS and Styling
+- Custom layout
+- Typography, font size
+- Text and background colors
+
+### Stretch Goal 2: GitHub and Publishing
+- Create repositories on GitHub
+- Manage web files
+- Publish your website
+
 ---
 
 ## Assessment
