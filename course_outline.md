@@ -49,33 +49,39 @@
 
 ## Unit 2: Text Content
 
-### Lesson 1: Headings
+### Lesson 1: HTML Essentials
+- Basic HTML structure and syntax
+- Understanding elements and tags
+- HTML document fundamentals
+<!-- TODO: move to unit 1 next year -->
+
+### Lesson 2: Headings
 - https://www.w3schools.com/html/html_headings.asp
 - Semantic heading tags: `<h1>` through `<h6>`
 
-### Lesson 2: Paragraphs, and Line Breaks
+### Lesson 3: Paragraphs, and Line Breaks
 - https://www.w3schools.com/html/html_paragraphs.asp
 - Paragraphs: `<p>`
 - Line breaks: `<br>`
 
-### Lesson 3: Text Formatting
+### Lesson 4: Text Formatting
 - https://www.w3schools.com/html/html_formatting.asp
 - Emphasizing text: `<strong>`, `<em>`
 - Horizontal rule: `<hr>`
 - Preformatted text: `<pre>`
 
-### Lesson 4: Quotes
+### Lesson 5: Quotes
 - https://www.w3schools.com/html/html_quotation_elements.asp
 - Block quotes: `<blockquote>`
 - Inline quotes: `<q>`
 
-### Lesson 5: Lists
+### Lesson 6: Lists
 - https://www.w3schools.com/html/html_lists.asp
 - Unordered lists: `<ul>` and `<li>`
 - Ordered lists: `<ol>` and `<li>`
 - Nested lists
 
-### Lesson 6: Comments
+### Lesson 7: Comments
 - https://www.w3schools.com/html/html_comments.asp
 - Writing comments with `<!-- comment -->`
 
