@@ -36,19 +36,17 @@ By the end of this course, students will be able to:
 
 ## Units and Lessons
 
-### Unit 1: Introduction to HTML and Notepad++
+### Unit 1: Introduction to HTML
 - Course overview, goals, and capstone introduction
 - What is the web? Elements of a webpage
 - Introduction to HTML
 - Setting up Notepad++, saving and opening HTML files
 - Explore an example HTML project
-
-### Unit 2: HTML Essentials
 - Elements, tags, and nesting  
 - Document structure and creating your first HTML file  
-- Page titles  
+- Page titles
 
-### Unit 3: Text Content
+### Unit 2: Text Content
 - Headings  
 - Paragraphs and line breaks  
 - Text formatting (bold, italic, etc.)
@@ -56,26 +54,26 @@ By the end of this course, students will be able to:
 - Lists (unordered, ordered, nested)  
 - Comments
 
-### Unit 4: Links and Navigation
+### Unit 3: Links and Navigation
 - Attributes  
 - Links
 - Navigation menus  
 
-### Unit 5: Media
+### Unit 4: Media
 - Images and alt text  
 - Audio and transcripts
 - Video and captions
 
-### Unit 6: Tables
+### Unit 5: Tables
 - Creating tables  
 - Rows, headers, captions, and keyboard navigation  
 
-### Unit 7: Forms
+### Unit 6: Forms
 - Basic forms and input types  
 - Labels and accessibility  
 - Advanced elements: text areas, dropdowns, buttons, validation  
 
-### Unit 8: Content Organization and Semantic Structure
+### Unit 7: Content Organization and Semantic Structure
 - Divs, spans, semantic HTML5 structure (`<header>`, `<main>`, `<section>`, etc.)  
 - Using browser inspector and W3 validator
 
