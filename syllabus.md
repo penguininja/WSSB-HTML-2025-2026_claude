@@ -54,39 +54,37 @@ By the end of this course, students will be able to:
 - Lists (unordered, ordered, nested)
 - Comments
 
-### Unit 3: Links and Navigation
+### Unit 3: Links and Navigation, Media, Tables
 - Attributes
 - Links
 - Navigation menus
-
-### Unit 4: Media
 - Images and alt text
 - Audio and transcripts
 - Video and captions
 - Embedded video?
-
-### Unit 5: Tables
 - Creating tables
 - Rows, headers, captions, and keyboard navigation
+- Final project - make multiple pages, link to them, table of contents
 
-### Unit 6: Forms
+### Unit 4: Forms
 - Basic forms and input types
 - Labels and accessibility
 - Advanced elements: text areas, dropdowns, buttons, validation
+- Prefill an email with a bunch of information and then email to us the teachers
 
-### Unit 7: Content Organization and Semantic Structure
+### Unit 5: Content Organization and Semantic Structure, CSS and Styling
 - Divs, spans, semantic HTML5 structure (`<header>`, `<main>`, `<section>`, etc.)
 - Using browser inspector and W3 validator
-
-### Stretch Goal 1: CSS and Styling
 - Custom layout
 - Typography, font size
 - Text and background colors
 
-### Stretch Goal 2: GitHub and Publishing
+### Big project: GitHub and Publishing
 - Create repositories on GitHub
 - Manage web files
 - Publish your website
+
+### Unit: Javascript Applications
 
 ---
 
