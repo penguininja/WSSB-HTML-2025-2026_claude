@@ -84,7 +84,10 @@ By the end of this course, students will be able to:
 - Manage web files
 - Publish your website
 
-### Unit: Javascript Applications
+### Unit: Javascript
+- Basic Programming Concepts
+- Interactions with Javascript
+- Applications in Javascript
 
 ---
 
