@@ -1,0 +1,88 @@
+<!--
+3.03 Navigation
+
+- Navigation menus provide quick access to different sections
+- Internal links can jump to specific parts of the same page
+- The id attribute creates anchors that links can target
+- Good navigation improves user experience and accessibility
+
+Basic navigation menu using internal links:
+-->
+<nav>
+  <a href="#about">About</a> |
+  <a href="#services">Services</a> |
+  <a href="#contact">Contact</a>
+</nav>
+
+<!--
+Sections with id attributes that the navigation targets:
+-->
+<h2 id="about">About Us</h2>
+<p>Information about our company...</p>
+
+<h2 id="services">Our Services</h2>
+<p>What we offer...</p>
+
+<h2 id="contact">Contact Information</h2>
+<p>How to reach us...</p>
+
+<!--
+Navigation Best Practices:
+- Use the <nav> element to mark navigation sections
+- Keep navigation simple and predictable
+- Use descriptive link text
+- Make sure all navigation links work
+
+<!--
+Example of navigation with better structure:
+-->
+<nav>
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#main-content">Main Content</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+
+<!--
+Advanced navigation with nested sections:
+-->
+<nav>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#chapter1">Chapter 1: Getting Started</a>
+      <ul>
+        <li><a href="#setup">Setup Instructions</a></li>
+        <li><a href="#basics">Basic Concepts</a></li>
+      </ul>
+    </li>
+    <li><a href="#chapter2">Chapter 2: Advanced Topics</a></li>
+  </ul>
+</nav>
+
+<!--
+"Back to top" links for long pages:
+Note: You can add id="top" to your main heading or use just href="#" to go to the page top.
+-->
+<p><a href="#top">Back to top</a></p>
+
+<!--
+3.03 Lab
+
+Take your Unit 2 capstone website and add single-page navigation.
+
+- Add a navigation menu at the top of your page using the <nav> element
+- Create id attributes for all your main sections (h2 headings work well)
+- Link each navigation item to its corresponding section
+- Include at least 4 navigation links to different parts of your page
+- Add a at least one "Back to top" link
+- Test all navigation links to make sure they work
+
+Navigation suggestions based on common Unit 2 content:
+- Introduction
+- Main Topic
+- Major subsections
+- Lists
+- Quotes
+- Contact
+-->
