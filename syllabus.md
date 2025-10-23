@@ -54,7 +54,7 @@ By the end of this course, students will be able to:
 - Lists (unordered, ordered, nested)
 - Comments
 
-### Unit 3: Links and Navigation, Media, Tables
+### Unit 3: Links and Navigation, Media
 - Attributes
 - Links
 - Navigation menus
@@ -62,22 +62,21 @@ By the end of this course, students will be able to:
 - Audio and transcripts
 - Video and captions
 - Embedded video?
-- Creating tables
-- Rows, headers, captions, and keyboard navigation
 - Final project - make multiple pages, link to them, table of contents
 
-### Unit 4: Forms
+### Unit 4: Content Organization and Semantic Structure, CSS and Styling
+- semantic HTML5 structure (`<header>`, `<main>`, `<section>`, etc.)
+- non-semantic HTML: Divs, spans
+- Using browser inspector and W3 validator
+- CSS Custom layout
+- Typography, font size
+- Text and background colors
+
+### Unit 5: Forms
 - Basic forms and input types
 - Labels and accessibility
 - Advanced elements: text areas, dropdowns, buttons, validation
 - Prefill an email with a bunch of information and then email to us the teachers
-
-### Unit 5: Content Organization and Semantic Structure, CSS and Styling
-- Divs, spans, semantic HTML5 structure (`<header>`, `<main>`, `<section>`, etc.)
-- Using browser inspector and W3 validator
-- Custom layout
-- Typography, font size
-- Text and background colors
 
 ### Big project: GitHub and Publishing
 - Create repositories on GitHub
@@ -88,6 +87,9 @@ By the end of this course, students will be able to:
 - Basic Programming Concepts
 - Interactions with Javascript
 - Applications in Javascript
+
+### Self Learning Topics
+- Tables: Creating tables, Rows, headers, captions, and keyboard navigation
 
 ---
 
