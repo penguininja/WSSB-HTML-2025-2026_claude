@@ -1,0 +1,67 @@
+<!--
+4.02 Audio
+
+HTML audio adds audio content to web pages:
+- The <audio> tag adds an audio player
+- The controls attribute adds controls for the audio player
+- The nested source tag with src attribute specifies the audio file location
+- The type attribute in the source tag specifies what kind of audio file is being played
+- The nested track tag can be used to provide a transcript of the audio file
+- Text shows up in the audio tag is not supported by the browser
+
+Source Tag
+- <source> tag is used within an <audio> element to specify multiple audio files, which provides the browser a choice of formats to use. Different computers/browser support different audio files, and specifying multiple sources allows the browser to choose the one that works best.
+    - The browser will check the <source> tags in the order they are listed and play the first file format it can support.
+- Attributes of the <source> tag
+    - src: Specifies the URL of the audio file.
+    - type: Specifies the MIME type of the audio file (e.g., audio/mpeg for MP3, audio/ogg for OGG). This is a crucial attribute because it allows the browser to determine if it can play the file without needing to download it first.
+
+Track Tag
+- Is a child of the <audio> element and provides timed text tracsk that can be displayed in parallel with the audio
+    - Accessibility: It enables features like captions and descriptions
+    - Internationalization: It allows for providing subtitles in different languages
+- Key attributes of the <track> element when used with <audio>:
+    - src: Specifies the URL of the text track file, typically a .vtt (WebVTT) file.
+    - kind: Defines the type of text track, such as captions, descriptions, chapters, or metadata.
+    - srclang: Specifies the language of the text track (e.g., en for English).
+    - label: Provides a user-readable title for the track, which can be displayed in the audio player's controls for track selection.
+    - default: Indicates that this track should be enabled by default if no other track is explicitly selected by the user.
+
+Basic audio tag with nested source tags and a transcript:
+-->
+<audio controls>
+  <source src="intro.m4a" type="audio/mpeg">
+  <track
+    src="intro.vtt"
+    kind="transcript"
+    srclang="en"
+    label="English Transcript"
+    >
+    Your browser does not support the audio element.
+</audio>
+
+<section aria-labelledby="transcript-heading">
+  <h2 id="transcript-heading">Transcript</h2>
+  <p>Hello my name is John.</p>
+  <p>We're learning about the audio tag today!</p>
+</section>
+
+<!--
+4.02 Lab
+
+Create a music or sound effect gallery webpage related to a topic you enjoy. Include:
+
+  - Good HTML structure
+  - An <audio> element with controls
+  - At least one <source> tag in each audio element
+  - Fallback text for older browsers
+  - A simple .vtt transcript file for any audio
+  - A <track> tag linking your .vtt file
+
+Content ideas:
+
+  - A clip from a public domain speech
+  - A short sound effect (e.g., a bird call)
+  - A voice memo
+  - A music clip to add as background
+-->
