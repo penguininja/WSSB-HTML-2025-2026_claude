@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin" />
+    <title>HTML Video Lesson</title>
+  </head>
+  <body>
+    <!-- 4.03 Video
+
+         HTML Video adds video content to web pages:
+         - The <video> tag adds an video player
+         - The controls attribute adds controls for the video player
+         - The nested source tag with src attribute specifies the video file location
+         - The type attribute in the source tag specifies what kind of video file is being played
+         - Alt text can be used to describe the video contents
+         - Nested elements to the video tag show up when then video tag is not
+         supported by the browser. The video tag appears to have broad adoption
+         around 2011, so browsers before that time frame did not support it.
+
+         Source Tag
+         - <source> tag is used within an <video> element to specify multiple video files, which provides the browser a choice of formats to use. Similar to audio different computers/browser support different video files, and specifying multiple sources allows the browser to choose the one that works best.
+         - The browser will check the <source> tags in the order they are listed and play the first file format it can support.
+         - Attributes of the <source> tag
+         - src: Specifies the URL of the video file.
+         - type: Specifies the MIME type of the video file.
+
+         Basic video tag with nested source tags: -->
+    <p>
+      <video
+        controls
+        width="250"
+        alt="A time-lapse capture of a flower (Portulaca grandiflora?) blooming in the morning in Bangalore, India."
+        poster="flower.jpg"
+        >
+        <source src="flower.webm" type="video/webm" />
+        Download the
+        <a href="flower.webm">WEBM</a>
+        video.
+      </video>
+      <cite>Video by Ajith Samuel, CC BY-SA 4.0, via Wikimedia Commons</cite>
+    </p>
+
+    <!--
+        In addition to video content you host yourself, you can embed video from places like YouTube!
+        This is often the easier way to add video to your websites.
+
+        Youtube uses an iframe tag to control the embed. There are several attributes and tags that come with a youtube embedding.
+        Note, embedding a youtube video requires running from a server. It cannot be configured to play when the HTML file is opened directly in your browser.
+        In practice this means, the video will be a link to youtube.
+
+        Basic youtube embedding example:
+      -->
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sdgqPvjDxkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+
+    <!--
+        Embedding from other sources also uses an iframe, and some like the following have less restrictions and can be played directly on your website when opened from a file.
+        Basic wikimedia video embedding example:
+      -->
+
+    <p>
+      <iframe src="https://commons.wikimedia.org/wiki/File:Time_lapse_of_Peony_flower_blooming.webm?embedplayer=yes" width="512" height="288" frameborder="0" loading="lazy" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <p>Another blooming flower</p>
+
+  </body>
+</html>
+<!--
+4.03 Lab
+
+Create a video gallery webpage related to a topic you enjoy, with videos from Wikimedia. Include:
+
+  - Good HTML structure
+  - An <video> element with controls
+  - At least one <source> tag in each video element
+  - Fallback text for older browsers
+  - At least one embedded video using an iframe
+
+Content ideas:
+
+  - A clip from a public domain speech
+  - A video memo
+  - timelapses of various phases of something!
+-->
