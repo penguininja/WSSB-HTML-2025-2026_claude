@@ -138,6 +138,11 @@
 ### Lesson 2: Intro to External CSS
 - Linking a CSS file
 - Introduce additional properties
+  
+### Lesson 3: Classes and IDs
+- Difference between classes and IDs
+- How to use classes as selectors
+- Best practices, semantic class names
 
 ### Lesson 3: CSS Colors
 - Color properties: color, background-color
