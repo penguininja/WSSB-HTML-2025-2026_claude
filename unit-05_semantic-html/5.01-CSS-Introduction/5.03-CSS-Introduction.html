@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Introduction and Typography</title>
+  <style>
+    /* This is CSS - it styles our HTML */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    .large-text {
+      font-size: 20px;
+    }
+    
+    .italic-text {
+      font-style: italic;
+    }
+    
+    .bold-text {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!--
+5.03 CSS Introduction and Typography
+
+CSS (Cascading Style Sheets) controls how HTML looks.
+While HTML provides structure and content, CSS provides visual styling.
+
+What is CSS?
+- CSS = Cascading Style Sheets
+- Controls colors, fonts, spacing, layout
+- Makes websites look professional and attractive
+- Improves readability and user experience
+
+How to add CSS to HTML:
+
+Method 1: Internal CSS (in the <head> section)
+<style>
+  h1 { color: blue; }
+</style>
+
+Method 2: External CSS file (separate .css file)
+<link rel="stylesheet" href="styles.css">
+
+For beginners, we'll use internal CSS (Method 1) because it's simpler.
+
+CSS Syntax:
+selector { property: value; }
+
+Examples:
+h1 { font-size: 32px; }
+p { color: blue; }
+body { font-family: Arial; }
+
+Typography Basics:
+-->
+
+<h1>Main Heading (32px, bold)</h1>
+<h2>Secondary Heading (24px)</h2>
+
+<p>This is normal paragraph text (16px, Arial font family).</p>
+
+<p class="large-text">This paragraph uses the "large-text" class to be 20px.</p>
+
+<p class="italic-text">This text is italic using font-style: italic.</p>
+
+<p class="bold-text">This text is bold using font-weight: bold.</p>
+
+<!--
+Font Properties:
+
+1. font-family: Changes the typeface
+   - Arial, sans-serif (clean, easy to read)
+   - Times, serif (traditional, formal)
+   - Georgia, serif (readable, professional)
+
+2. font-size: Controls text size
+   - Measured in pixels (px)
+   - 16px is typical for body text
+   - 24px-32px good for headings
+
+3. font-weight: Controls thickness
+   - normal (default)
+   - bold
+   - 100-900 (numbers)
+
+4. font-style: Controls slant
+   - normal (default)
+   - italic
+
+Common Typography Examples:
+-->
+
+<h2>Typography Examples</h2>
+
+<div style="font-family: Arial, sans-serif;">
+  <h3>Arial Font Family (Clean and Modern)</h3>
+  <p>This text uses Arial, which is clean and easy to read on screens.</p>
+</div>
+
+<div style="font-family: Georgia, serif;">
+  <h3>Georgia Font Family (Professional)</h3>
+  <p>This text uses Georgia, which looks more formal and traditional.</p>
+</div>
+
+<div style="font-family: 'Courier New', monospace;">
+  <h3>Courier New Font Family (Code Style)</h3>
+  <p>This text uses Courier New, often used for code or technical content.</p>
+</div>
+
+<!--
+External CSS File Option:
+
+Yes, you can use a separate CSS file! Here's how:
+
+1. Create a file called "styles.css"
+2. Put your CSS rules in that file (without <style> tags)
+3. Link it in your HTML head section:
+   <link rel="stylesheet" href="styles.css">
+
+Example styles.css file content:
+body { font-family: Arial, sans-serif; }
+h1 { font-size: 32px; color: blue; }
+p { font-size: 16px; }
+
+Benefits of external CSS:
+- Reuse styles across multiple pages
+- Keeps HTML cleaner
+- Easier to maintain
+- Better organization
+
+For now, we'll use internal CSS to keep things simple.
+
+5.03 Lab
+
+Create a webpage that demonstrates different typography styles:
+
+1. Create an HTML page with proper semantic structure
+2. Add internal CSS using <style> tags in the <head>
+3. Include these typography examples:
+   - A main heading with large font size (32px or bigger)
+   - Subheadings with medium font size (24px)
+   - Regular paragraphs with readable font size (16px)
+   - At least one paragraph with italic text
+   - At least one paragraph with bold text
+   - Try at least two different font families
+4. Use content that interests you (hobby, favorite subject, etc.)
+
+CSS properties to practice:
+- font-family
+- font-size
+- font-weight
+- font-style
+
+Example CSS starter code:
+<style>
+  body { font-family: Arial, sans-serif; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 24px; }
+  p { font-size: 16px; }
+  .italic { font-style: italic; }
+  .bold { font-weight: bold; }
+</style>
+
+Focus on making your text clear, readable, and visually appealing.
+-->
