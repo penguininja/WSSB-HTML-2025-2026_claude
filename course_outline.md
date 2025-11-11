@@ -100,7 +100,7 @@
 - Creating simple navigation menus with links
 - Using IDs in links
 
-## Unit 4: Media
+## Unit 4: Media and Structure
 
 ### Lesson 1: Images and Alt Text
 - https://www.w3schools.com/html/html_images.asp
@@ -115,15 +115,41 @@
 - Local vs. online audio sources
 
 ### Lesson 3: Video
+- HTML5 video tag: `<video controls>`
+- Video attributes and accessibility
+- Local vs. online video sources
 
-## Unit 5: Tables
+### Lesson 4: Document Structure
+- Semantic HTML5 structure elements
+- Document layout: `<header>`, `<main>`, `<footer>`
+- Creating organized, accessible webpage structure
 
-### Lesson 1: Tables
-- https://www.w3schools.com/html/html_tables.asp
-- Tables: `<table>`
-- Rows and cells: `<tr>`, `<td>`, `<th>`
-- Headers and footers: `<thead>`, `<tbody>`, `<tfoot>`, `<caption>`
-- Keyboard shortcuts
+### Unit 4  Project
+- Add media to capstone project
+- Apply semantic structure and organize content with semantic elements
+- Improve accessibility and code organization
+
+## Unit 5: CSS Styling
+
+### Lesson 1: CSS Introduction
+- What is CSS and how it works with HTML
+- Internal vs external CSS
+
+### Lesson 2: Typography
+- Font properties: font-family, font-size, font-weight, font-style
+
+### Lesson 3: CSS Colors
+- Color properties: color, background-color
+- Color psychology and professional design
+- Accessibility and contrast requirements
+- Using contrast checkers for compliance
+
+### Lesson 4: CSS Spacing and Layout
+- The box model: margin, padding, border
+- Creating professional layouts with spacing
+- Basic layout techniques for organized content
+
+### Lesson 5: Layout
 
 ## Unit 6: Forms
 
@@ -141,13 +167,16 @@
 - Form submission: `<button>`
 - Form validation attributes
 
-## Unit 7: Content Organization and Semantic Structure
+## Unit 7: Advanced HTML and Validation
 
-### Lesson 1: Divs, Spans, and Semantic Structure
+### Lesson 1: Divs, Spans, and Non-Semantic Elements
 - https://www.w3schools.com/html/html_div.asp
-- Grouping with `<div>` and inline grouping with `<span>`
-- Semantic tags: `<header>`, `<footer>`, `<main>`, `<article>`, `<section>`, `<nav>`
-- Why semantic HTML matters for accessibility and structure
+- When to use `<div>` and `<span>` for styling and grouping
+- Difference between semantic and non-semantic elements
+- Best practices for element selection
 
 ### Lesson 2: Web Inspector and W3 Validator
 - https://validator.w3.org/nu/#textarea
+- Using browser developer tools
+- HTML validation and debugging
+- Accessibility testing tools
