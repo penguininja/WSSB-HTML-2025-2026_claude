@@ -144,18 +144,18 @@
 - How to use classes as selectors
 - Best practices, semantic class names
 
-### Lesson 3: CSS Colors
+### Lesson 4: CSS Colors
 - Color properties: color, background-color
 - Color psychology and professional design
 - Accessibility and contrast requirements
 - Using contrast checkers for compliance
 
-### Lesson 4: CSS Spacing and Layout
+### Lesson 5: CSS Spacing and Layout
 - The box model: margin, padding, border
 - Creating professional layouts with spacing
 - Basic layout techniques for organized content
 
-### Lesson 5: Layout
+### Lesson 6: Layout
 
 ## Unit 6: Forms
 
