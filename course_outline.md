@@ -131,12 +131,13 @@
 
 ## Unit 5: CSS Styling
 
-### Lesson 1: CSS Introduction
+### Lesson 1: CSS Introduction and Typography
 - What is CSS and how it works with HTML
-- Internal vs external CSS
+- Font properties: font-family, font-size, font-weight, font-style, color
 
-### Lesson 2: Typography
-- Font properties: font-family, font-size, font-weight, font-style
+### Lesson 2: Intro to External CSS
+- Linking a CSS file
+- Introduce additional properties
 
 ### Lesson 3: CSS Colors
 - Color properties: color, background-color
