@@ -1,0 +1,111 @@
+<!--
+5.02 Lesson
+
+Method 1: Inline CSS (Review)
+-->
+<p style="color: red;">This is red text.</p>
+
+<!--
+Method 2: Internal CSS
+
+You can write CSS in a <style> tag inside the <head> of your HTML file.
+This keeps the styling in one place.
+
+Example:
+-->
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial;
+    }
+    h1 {
+      color: navy;
+    }
+    p {
+      font-size: 18px;
+      color: darkgreen;
+    }
+  </style>
+</head>
+
+<!--
+Method 3: External CSS
+
+For larger websites, we keep CSS in a separate file.
+
+Steps:
+1. Create a new file called style.css
+2. Write your CSS rules inside it:
+
+Example (style.css):
+  h1 {
+    background-color: pink;
+    font-family: Georgia;
+  }
+
+3. Link the CSS file in your HTML <head>. This connects your HTML and CSS files.
+
+Example:
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+Notes:
+- CSS rules are grouped by selector, like h1, p, or body
+- Each rule has property value pairs, like color: red;
+- All styles apply to every element that matches that selector
+
+Syntax reminder:
+Each CSS rule starts with a selector (like p or h1),
+followed by curly braces { } that hold the declarations.
+Each declaration uses a property, a colon, and a value, and ends with a semicolon — for example:
+-->
+p {
+  color: blue;
+  font-size: 18px;
+}
+
+<!--
+Why use external CSS?
+- Keeps your HTML clean and easier to read
+- Makes it easy to change styles across multiple pages
+- Follows best practices for web development
+
+5.02 Activity
+
+Identify the following terms in the example:
+- Selector
+- Property
+- Value
+- Rule
+- Declaration
+
+Example:
+h1 {
+  font-size: 46px;
+}
+
+-->
+
+<!--
+5.02 Lab
+
+Write a menu page for a fictional restaurant.
+1. Create a new folder for your 5.02 project, and add an HTML page named index.html
+2. Add an external CSS file named style.css and link it to your HTML file in <head>
+<link rel="stylesheet" href="style.css">
+3. Create a webpage for a restaurant menu. Include at least three different selectors
+and at least five different declarations.
+4. Feel free to experiment with properties! Some ideas:
+font-size
+font-family
+color
+background-color
+border
+text-align
+padding
+margin
+border-radius
+max-width
+-->
