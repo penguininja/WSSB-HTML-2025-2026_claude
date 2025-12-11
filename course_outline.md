@@ -138,7 +138,7 @@
 ### Lesson 2: Intro to External CSS
 - Linking a CSS file
 - Introduce additional properties
-  
+
 ### Lesson 3: Classes and IDs
 - Difference between classes and IDs
 - How to use classes as selectors
@@ -150,14 +150,23 @@
 - Accessibility and contrast requirements
 - Using contrast checkers for compliance
 
-### Lesson 5: CSS Spacing and Layout
+### Lesson 5: CSS Spacing
 - The box model: margin, padding, border
 - Creating professional layouts with spacing
+
+### Lesson 6: CSS Layout
 - Basic layout techniques for organized content
+- Flexbox Grid layout
+- Float - word style inline images
 
-### Lesson 6: Layout
+## Unit 6: Publishing to Github
+TODO: WORKFLOW for how to teach this
+- Use the web interface to publish their sites, creating their files, the settings to set up a github pages site.
+- Speak to framework or preprocessor like Jekyll
+  in order to have a consistent website, preprocessor makes this possible
+  This will happen later
 
-## Unit 6: Forms
+## Unit 7: Forms
 
 ### Lesson 1: Basic Forms - Structure and Input Types
 - https://www.w3schools.com/html/html_forms.asp
@@ -173,7 +182,7 @@
 - Form submission: `<button>`
 - Form validation attributes
 
-## Unit 7: Advanced HTML and Validation
+## Unit 8: Advanced HTML and Validation
 
 ### Lesson 1: Divs, Spans, and Non-Semantic Elements
 - https://www.w3schools.com/html/html_div.asp
