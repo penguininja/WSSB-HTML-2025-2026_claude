@@ -1,0 +1,44 @@
+<!--
+5.03 Classes and IDs
+
+5.03 Lesson
+In CSS, classes and IDs let you target specific HTML elements more precisely than element selectors like p or h1.
+
+- They are added as attributes to your HTML, just like "src" or "style". (We've already experimented with IDs for navigation!)
+- An ID is used for one unique element on a page.
+- In CSS, IDs start with a #
+- A class can be used on multiple elements.
+- In CSS, classes start with a .
+- There are many strategies to naming your classes and IDs effeciently.
+
+Example HTML
+-->
+
+<h2 class="section-heading">About Me</h2>
+
+<!-- 
+Example CSS
+
+.section-heading {
+  font-size: 44px;
+}
+
+-->
+
+<!-- 
+5.03 Lab
+
+Lab: Multi-Page Event Website
+Create a website for a fictional event (concert, tournament, festival, game night, charity event, etc.). 
+The site will have two simple pages that share styles.
+
+Pages to Create
+index.html – Event overview (title, date, short description)
+details.html – Event details (schedule, location, extra info)
+Both pages should link to the same external CSS file.
+
+Requirements
+- Use at least two different class on multiple elements across both pages (for example: event details, info blocks, or highlighted text) and style that class in CSS.
+- Use at least two unique ID per page (IDs must not repeat on the same page) to style a special element like a page title or featured section.
+- Add a navigation link on each page so you can move between index.html and details.html.
+- (Challenge) On one element, combine a class and an ID, then observe which styles win.
