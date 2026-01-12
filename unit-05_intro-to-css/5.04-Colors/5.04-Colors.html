@@ -1,0 +1,100 @@
+<!--
+5.04 Colors and Backgrounds
+
+A color palette is a small, intentional set of colors (often 3–5) that work
+well together. This usually includes a primary color, one or two
+accents, and neutral colors (white, gray, black).
+
+Activity:
+Find 2-3 color palettes online for inspiration. Try using keywords like:
+- Professional
+- Cozy
+- Energetic
+Or look up color meanings here:
+https://www.canva.com/colors/color-meanings/
+
+Example palettes:
+https://www.canva.com/colors/color-palettes/
+
+Or use an image and an online palette generator:
+https://www.canva.com/colors/color-palette-generator/
+
+In CSS, text color must have enough contrast against its background to be readable.
+Low contrast makes text hard or impossible to read, especially for users with
+low vision. A good rule of thumb is dark text on a light background or light text on
+a dark background. Use a contrast checker!
+
+https://webaim.org/resources/contrastchecker/
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+-->
+
+<!--
+Backgrounds
+
+There are many ways to make your backgrounds more dynamic, like using gradients and images.
+But make sure your text is still readable! A common, accessible pattern is to put the image
+or gradient on the page (like "body") and placing content inside containers with solid
+background colors.
+-->
+
+<!--
+Gradient example:
+
+body {
+  background: linear-gradient(blue, green);
+}
+
+main {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+-->
+
+<!--
+Background image example:
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+-->
+
+<!--
+Lab Assignment: Color & Contrast
+
+Create a webpage for a school club (a sport, music group, favorite class, etc) using
+a color palette with 3-5 colors. Every text element must have sufficient contrast
+against its background. Include at least one section with a background color different
+from the rest of the page.
+
+Add either a gradient section or a background image. Test at least two text/background
+color combinations with a contrast checker and fix any issues you find.
+
+Bonus: Add a semi-transparent layer between the gradient and the text to increase readability.
+Tip: Use the color dropper on the contrast checker to help select specific colors
+
+Example:
+.hero {
+  background: linear-gradient(135deg, #0a3d62, #60a3bc);
+  color: #ffffff;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* contrast-safe overlay */
+  padding: 1rem;
+}
+
+-->
