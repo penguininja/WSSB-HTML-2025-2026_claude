@@ -1,0 +1,112 @@
+<!--
+5.05: The CSS Box Model
+
+In CSS, every element (like a heading, a paragraph, or a link) is treated as a rectangular box.
+To make a website look professional, we use the **Box Model** to control the space around these elements.
+
+## 1. The Four Layers of the Box
+
+Imagine a framed picture on a wall.
+
+- **Content:** The photo itself (the text or image on your page).
+- **Padding:** The matting inside the frame (the space between the photo and the frame).
+- **Border:** The wooden frame itself (the line around your content).
+- **Margin:** The empty wall space *outside* the frame (the space between this picture and other pictures).
+
++------------------------------------------+
+|  MARGIN (The outermost space)            |
+|   +----------------------------------+   |
+|   |  BORDER (The middle line)        |   |
+|   |   +--------------------------+   |   |
+|   |   |  PADDING (The inner gap) |   |   |
+|   |   |   +------------------+   |   |   |
+|   |   |   |     CONTENT      |   |   |   |
+|   |   |   |  (Text / Images) |   |   |   |
+|   |   |   +------------------+   |   |   |
+|   |   +--------------------------+   |   |
+|   +----------------------------------+   |
++------------------------------------------+
+
+## 2. CSS Properties
+
+### Padding (Inside Space)
+
+Padding pushes the content away from the border. This prevents text from looking "cramped."
+
+* `padding: 20px;` (Adds 20 pixels of space to all four sides)
+
+### Border (The Edge)
+
+The border requires three values: thickness, style, and color.
+
+* `border: 2px solid black;`
+
+### Margin (Outside Space)
+
+Margin creates distance between different elements.
+
+* `margin: 50px;` (Pushes other elements 50 pixels away from this box)
+
+Note that margin between other boxes picks the maximum margin. Margin does not add together.
+
+## 3. The Clockwise Rule (Shorthand)
+
+If you want different amounts of space on different sides, you can list four numbers. CSS reads them in a clockwise direction starting from the top:
+
+1. Top
+2. Right
+3. Bottom
+4. Left
+
+**Example:** `padding: 10px 20px 15px 5px;`
+(Top: 10px, Right: 20px, Bottom: 15px, Left: 5px)
+
+
+-->
+
+<!--
+
+Lab Assignment: Family Profile Page
+Objective: Create a webpage featuring 3 to 5 family members (or pets/friends). Each member must have their own "Profile Card."
+
+A Profile card should have the family members name, a picture of them, and a brief description about them.
+The cards should be well spaced one after the other.
+
+Remember using a class (like .profile-card) will help you style each profile. And should profile card should have each of the following defined:
+
+border: A solid line (e.g., 2px solid #555).
+padding: At least 20px so the text doesn't touch the border.
+margin: At least 15px on the bottom so the cards don't touch each other.
+background-color: Give the cards a background color that constrasts well with your main background-color, so the border is easy to find.
+
+Very basic Profile Card:
+  ┌───────────────────────────────────────────────┐
+  │ ┌───────────────────────────────────────────┐ │
+  │ │Name                                       │ │
+  │ └───────────────────────────────────────────┘ │
+  │ ┌───────────────────────────────────────────┐ │
+  │ │Picture                                    │ │
+  │ └───────────────────────────────────────────┘ │
+  │ ┌───────────────────────────────────────────┐ │
+  │ │Description                                │ │
+  │ └───────────────────────────────────────────┘ │
+  └───────────────────────────────────────────────┘
+
+Internal Spacing
+Play with the spacing inside the profile card to get the view you want. Padding/Margin/Border can all make sense here.
+
+The "Touch" Test: Is there a clear gap (Margin) between the bottom of a profile card and the top of another card?
+
+Bonus Challenge: Rounded Corners
+To make the family cards look modern, try adding a border-radius.
+
+---
+
+This code may help you center your content:
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+-->
