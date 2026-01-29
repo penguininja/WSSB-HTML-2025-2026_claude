@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Lesson 5.06: Basic Layout - Flexbox and Floats
 
 Until now, your boxes have stacked one on top of the other like a tower of blocks. Today, we learn how to put boxes side-by-side to create sidebars and professional magazine-style layouts.
@@ -38,6 +38,23 @@ Example:
 |  - References   |      the image here...              |
 |                 |                                     |
 +-------------------------------------------------------+
+
+Example of HTML to be ready for the CSS:
+<div class="wrapper">
+  <div class="sidebar"></div>
+  <div class="main"></div>
+</div>
+
+<div class="wrapper">
+  <nav class="sidebar"></nav>
+  <main class="main"></main>
+</div>
+
+<main class="wrapper">
+  <aside class="sidebar"></aside>
+  <article class="main"></article>
+</main>
+
 
 Screen Reader Note:
 The order in your HTML file matters! Even if you move the Sidebar to the left visually using CSS, a screen reader will read the elements in the order they appear in the code. Usually, we put the Main Article first so the student doesn't have to listen to the navigation links every time the page loads.
