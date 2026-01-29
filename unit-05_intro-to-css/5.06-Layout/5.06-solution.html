@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>5.06 Flexbox - Lab Solution Example</title>
+  <style>
+    /* 1. THE WRAPPER */
+    .wiki-wrapper {
+      display: flex;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 20px auto;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    /* 2. THE MAIN CONTENT (First in HTML) */
+    main {
+      flex: 3;   /* Takes up 3 parts of space */
+      order: 2;  /* Moves it to the RIGHT visually */
+      background-color: #ffffff;
+    }
+
+    main h2 {
+      margin-top: 0;
+    }
+
+    /* 3. THE SIDEBAR (Second in HTML) */
+    nav {
+      flex: 1;   /* Takes up 1 part of space */
+      order: 1;  /* Moves it to the LEFT visually */
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    /* 4. THE FLOATED INFO BOX */
+    .info-box {
+      float: right;
+      width: 200px;
+      background-color: #e8f5e9;
+      border: 2px solid #2e7d32;
+      padding: 15px;
+      margin-left: 20px;
+      margin-bottom: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Simple list styling for the sidebar */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Encyclopedia of Nature: Giant Pandas</h1>
+  </header>
+
+  <div class="wiki-wrapper">
+
+    <main>
+      <h2 id="intro">Introduction</h2>
+
+      <div class="info-box">
+        <strong>Quick Facts:</strong>
+        <ul>
+          <li><strong>Status:</strong> Vulnerable</li>
+          <li><strong>Diet:</strong> Bamboo</li>
+          <li><strong>Region:</strong> China</li>
+        </ul>
+      </div>
+
+      <p>
+        The giant panda, also known as the panda bear, is a bear species endemic to China.
+        It is characterised by its bold black-and-white coat and rotund body.
+        Though it belongs to the order Carnivora, the giant panda is a folivore, with bamboo
+        shoots and leaves making up more than 99% of its diet. Giant pandas in the wild
+        will occasionally eat other grasses, wild tubers, or even meat in the form of
+        birds, rodents, or carrion.
+      </p>
+
+      <h2 id="history">History</h2>
+      <p>
+        For many decades, the precise taxonomic classification of the giant panda was
+        under debate because it shares characteristics with both bears and raccoons.
+        However, molecular studies indicate the giant panda is a true bear, part of the
+        family Ursidae.
+      </p>
+
+      <h2 id="conservation">Conservation</h2>
+      <p>
+        Giant pandas are considered an endangered species. This means
+        without human help they are at risk of extinction. There are
+        efforts by the World Wildlife Foundation (WWF) and other
+        organizations to help conserve giant panda habitats, to ensure
+        these beautiful creatures continue to survive.
+      </p>
+
+    </main>
+
+    <nav>
+      <h3>Contents</h3>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#">Conservation</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</body>
