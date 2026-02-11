@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <title>5.06 Flexbox - Lab Solution Example</title>
   <style>
+
+    body {
+      margin: 0;
+      height: 100vh;      /* Fix the body to exactly the screen height */
+      display: flex;      /* Make the body a flex container */
+      flex-direction: column; /* Stack Header and Wrapper vertically */
+      overflow: hidden;   /* Prevent the body from ever scrolling */
+    }
+
     /* 1. THE WRAPPER */
     .wrapper {
       display: flex;
@@ -12,10 +21,12 @@
       margin: 20px auto;
       font-family: sans-serif;
       line-height: 1.6;
+      height: 90vh;
     }
 
     header {
       text-align: center;
+      height: 10vh;
     }
 
     /* 2. THE MAIN CONTENT (First in HTML) */
@@ -23,6 +34,7 @@
       flex: 3;   /* Takes up 3 parts of space */
       order: 2;  /* Moves it to the RIGHT visually */
       background-color: #ffffff;
+      overflow-y: scroll;
     }
 
     main h2 {
@@ -33,10 +45,11 @@
     nav {
       flex: 1;   /* Takes up 1 part of space */
       order: 1;  /* Moves it to the LEFT visually */
+      overflow-y: scroll;
       background-color: #f4f4f4;
       padding: 20px;
+      padding-top: 400px;
       border-radius: 8px;
-      height: fit-content;
     }
 
     /* 4. THE FLOATED INFO BOX */
