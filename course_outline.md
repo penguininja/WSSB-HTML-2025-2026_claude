@@ -160,14 +160,16 @@
 - Float - word style inline images
 
 ## Unit 6: Publishing to Github
-TODO: WORKFLOW for how to teach this
 - Use the web interface to publish their sites, creating their files, the settings to set up a github pages site.
-- Speak to framework or preprocessor like Jekyll
-  in order to have a consistent website, preprocessor makes this possible
-  This will happen later
+- Every page they make from here on out should be published to Github
 
-## Unit 7: Forms
+### Lesson TBD: Git
+- using github pages through the browser may become cumbersome, learn git to make the process a little easier.
 
+## Unit 7: Responsive Design
+### Lesson TBD
+
+## Unit TBD: Forms
 ### Lesson 1: Basic Forms - Structure and Input Types
 - https://www.w3schools.com/html/html_forms.asp
 - Form structure: `<form>`
@@ -182,7 +184,7 @@ TODO: WORKFLOW for how to teach this
 - Form submission: `<button>`
 - Form validation attributes
 
-## Unit 8: Advanced HTML and Validation
+## Unit TBD: Advanced HTML and Validation
 
 ### Lesson 1: Divs, Spans, and Non-Semantic Elements
 - https://www.w3schools.com/html/html_div.asp

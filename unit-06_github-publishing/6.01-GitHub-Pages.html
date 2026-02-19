@@ -1,5 +1,5 @@
 <!--
-6.01 Publishing Your Website with GitHub Pages
+6.01 Publishing a Website with GitHub Pages
 
 6.01 Do Now
 Open your browser and visit https://pages.github.com/
@@ -24,7 +24,6 @@ Why use GitHub Pages?
 
 What you need before starting:
 - A GitHub account (https://github.com)
-- Git installed on your computer
 - A project folder with at least one HTML file named index.html
 -->
 
@@ -57,9 +56,10 @@ Keep this page open — you will need the commands in the next step.
 -->
 
 <!--
-Step 3: Prepare Your Project Folder
+Step 3: Create the homepage.
 
-Your project folder should have this structure:
+Add index.html for your first test.
+Your project folder should have a structure like the following:
 
   my-website/
     index.html
@@ -73,52 +73,11 @@ If your file is named something else, rename it to index.html
 -->
 
 <!--
-Step 4: Connect Your Folder to GitHub Using the Terminal
-
-Open your terminal (Command Prompt on Windows, Terminal on Mac).
-Navigate to your project folder using the cd command:
--->
-
-<!--
-Terminal commands — type these one at a time:
-
-  cd path/to/my-website
-
-Initialize a Git repository in your project folder:
-
-  git init
-
-Add all your files to Git:
-
-  git add .
-
-Create your first commit:
-
-  git commit -m "first commit"
-
-Connect your local folder to the GitHub repository you created.
-Copy the URL from the GitHub setup page — it looks like this:
-
-  git remote add origin https://github.com/yourusername/my-website.git
-
-Set the branch name to "main":
-
-  git branch -M main
-
-Push your files to GitHub:
-
-  git push -u origin main
-
-After running these commands, refresh your GitHub repository page.
-You should see all your files there.
--->
-
-<!--
-Step 5: Enable GitHub Pages
+Step 4: Enable GitHub Pages
 
 1. Go to your repository on GitHub
-2. Click "Settings" (the gear icon near the top)
-3. In the left sidebar, click "Pages"
+2. Find and click the "Settings" link
+3. Find and click the "Pages" link
 4. Under "Source", select "Deploy from a branch"
 5. Under "Branch", select "main" and keep the folder as "/ (root)"
 6. Click "Save"
@@ -128,88 +87,4 @@ GitHub will show you a message with your live URL:
   https://yourusername.github.io/my-website/
 
 Click the link to see your published website.
--->
-
-<!--
-Step 6: Updating Your Website
-
-Whenever you make changes to your files, follow these steps to update your live site:
-
-1. Save your changes in your code editor
-2. Open the terminal and navigate to your project folder
-3. Run these commands:
-
-  git add .
-  git commit -m "describe what you changed"
-  git push
-
-4. Wait 1-2 minutes for GitHub Pages to rebuild your site
-5. Refresh your website URL to see the updates
-
-Tip: Write clear commit messages that describe what changed.
-Good: "add contact page"
-Bad: "update"
--->
-
-<!--
-Common Problems and Solutions
-
-Problem: "My site shows a README instead of my webpage"
-Solution: Make sure your main HTML file is named index.html
-
-Problem: "My images are not showing up"
-Solution: Check that image file paths are correct and use relative paths.
-Use this:
--->
-<img src="images/photo.jpg" alt="My photo">
-<!--
-Not this:
--->
-<!-- <img src="C:/Users/me/Desktop/photo.jpg" alt="My photo"> -->
-<!--
-
-Problem: "My CSS is not loading"
-Solution: Make sure your link tag uses a relative path:
--->
-<link rel="stylesheet" href="style.css">
-<!--
-Not an absolute path from your computer.
-
-Problem: "My site is not updating after I pushed"
-Solution: Wait 1-2 minutes. GitHub Pages can take time to rebuild.
-You can check the build status under Settings > Pages in your repository.
-
-Problem: "404 error when visiting my site"
-Solution: Double check that your repository is public and that GitHub Pages
-is enabled in Settings > Pages.
--->
-
-<!--
-6.01 Activity
-
-With a partner, review each other's GitHub repositories:
-1. Can you find their index.html file in the repository?
-2. Are all their CSS and image files uploaded?
-3. Do the file paths in their HTML use relative paths (not absolute)?
-4. Is their repository set to Public?
-
-Share any issues you find so they can fix them before publishing.
--->
-
-<!--
-6.01 Lab
-
-Publish one of your previous projects to GitHub Pages:
-
-1. Choose a project from a previous unit (your restaurant menu, personal page, etc.)
-2. Make sure the main file is named index.html
-3. Create a new repository on GitHub
-4. Use the terminal commands from this lesson to push your project
-5. Enable GitHub Pages in your repository settings
-6. Verify your site is live by visiting the URL
-7. Share your live URL with your teacher
-
-Bonus:
-- Add a second page (like about.html) and link to it from index.html
-- Make sure all links between pages work on the live site
 -->
