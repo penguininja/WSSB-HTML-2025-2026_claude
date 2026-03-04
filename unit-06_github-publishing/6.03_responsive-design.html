@@ -1,0 +1,138 @@
+<!--
+
+6.03: Responsive Design
+
+Congrats on publishing your first site!
+
+Responsive design means building one site that automatically adjusts its layout
+for any screen — phone, tablet, laptop, TV. The goal isn't a separate "mobile
+version," it's a flexible design.
+
+Do Now:
+- Open your GitHub Pages site.
+- Open the inspector toolbar
+Right click -> Inspect element, then click the phone icon
+OR Ctrl+Shift+I then Ctrl+Shift+M
+- Examine what works and doesn't work on your site
+
+
+# THE VIEWPORT META TAG
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+# TAPPABLE BUTTONS & TOUCH TARGETS
+
+A mouse can click a tiny 8px link. A finger cannot. Apple and Google both
+recommend touch targets be at least 44x44 pixels. Buttons that are too small
+are one of the most frustrating mobile experiences.
+
+Also make sure buttons are spaced apart — two buttons right next to each other
+are easy to mis-tap. Add a little margin between them.
+
+
+# SIDEBARS THAT DON'T BREAK EVERYTHING
+
+A sidebar works fine on a wide screen. On a 375px phone, a sidebar that takes
+40% of the width leaves almost no room for your actual content — and if it's
+wider, it might overlap or cause horizontal scrolling.
+
+The fix: stack them vertically on small screens using a media query.
+
+  /* Default: stacked layout (mobile first!) */
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Only go side-by-side on larger screens */
+  @media (min-width: 768px) {
+    .page-layout {
+      flex-direction: row;
+    }
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+    }
+  }
+
+
+# MEDIA QUERIES
+
+A media query is CSS that only applies when certain conditions are true — like
+when the screen is narrower than 600px. Think of it as an if-statement for
+your styles.
+
+  /* This CSS applies to ALL screen sizes */
+  h1 { font-size: 2rem; }
+
+  /* This block ONLY runs on screens 600px wide or less */
+  @media (max-width: 600px) {
+    h1 { font-size: 1.3rem; }     /* smaller on phones */
+
+    .hero-image { display: none; } /* hide big image on small screens */
+
+    nav ul {
+      flex-direction: column;      /* stack nav links vertically */
+    }
+  }
+
+Common breakpoints:
+
+  < 480px   — Small phones          (max-width: 480px)
+  < 768px   — Most phones + tablets (max-width: 768px)
+  < 1024px  — Tablets + laptops     (max-width: 1024px)
+  > 1200px  — Desktop               (min-width: 1200px)
+
+TIP — Mobile-First Approach:
+Write your default CSS for small screens first, then use min-width media
+queries to add complexity for larger screens. It's easier to add things as
+screens get bigger than to take them away.
+
+
+# TEXT SIZE & FLEXIBLE IMAGES
+
+Two quick wins that make a huge difference:
+
+  /* Images should never overflow their container */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* clamp(min, preferred, max) — font that scales with screen width */
+  h1 { font-size: clamp(1.5rem, 5vw, 3rem); }
+  p  { font-size: clamp(0.95rem, 2.5vw, 1.1rem); }
+
+  Avoid horizontal scrolling on mobile.
+
+What is vw?
+1vw = 1% of the viewport (screen) width. So 5vw on a 400px phone is 20px,
+but on a 1200px monitor it's 60px. Combined with clamp(), your font
+automatically scales — no media queries needed!
+
+
+--------------------------------------------------------------------------------
+07. YOUR RESPONSIVE CHECKLIST
+--------------------------------------------------------------------------------
+
+Use this to audit your GitHub Pages site. Check off each item as you fix it.
+
+  [ ] Added <meta name="viewport"...> to my <head>
+  [ ] Buttons are at least 44px tall with enough padding to tap
+  [ ] Images have max-width: 100%; height: auto;
+  [ ] Text is readable without pinching to zoom (min 16px body text)
+  [ ] Sidebar (if any) stacks vertically on small screens
+  [ ] No horizontal scrollbar when viewed on a phone
+  [ ] Tested in Chrome DevTools phone simulator
+  [ ] Tested on an actual phone (or asked someone to)
+
+CHALLENGE: UPDATE YOUR GITHUB PAGES SITE
+
+Add the viewport meta tag, make your images flexible, and write at least one
+media query. Then re-publish and test on your phone. Share your updated site
+URL with the class!
+
+Tip: In Chrome DevTools, press Ctrl+Shift+M (or Cmd+Shift+M on Mac) to toggle
+the device simulator while your site is open.
+
+  -->
