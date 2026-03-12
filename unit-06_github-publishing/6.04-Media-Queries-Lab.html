@@ -4,21 +4,28 @@
 Do Now:
 Open 6.04-Media-Queries-Lab/index.html in your browser.
 Use the Chrome DevTools device toolbar (Ctrl+Shift+M or Cmd+Shift+M) to
-resize the page to different widths: 1200px, 768px, and 375px.
-Write down two things that look broken or awkward at small sizes.
+resize the page to different widths: 375px, 768px, and 1200px.
+Notice how the base styles are designed for a phone. What needs to change
+as the screen gets wider?
 
 Lab Overview:
 
-In this lab you will practice writing CSS media queries to make a webpage
-look good on phones, tablets, and desktops. The HTML is already written
-for you — you will ONLY edit the style.css file.
+In this lab you will practice writing CSS media queries using a
+mobile-first approach. The base styles are already written for phone
+screens. You will add min-width media queries to improve the layout
+as the screen gets wider. Do NOT edit index.html.
 
-Specifically, you will only add new CSS to the bottom of the file. You
-should not have to edit any of the existing CSS.
+Specifically, you will only add new CSS to the bottom of style.css.
+You should not have to edit any of the existing CSS.
+
+Mobile-First Approach:
+  - Base CSS = phone layout (everything stacked, single column)
+  - min-width media queries = add complexity for wider screens
+  - We ONLY use min-width — never max-width
 
 The page is a community center website with:
   - A menu bar across the top (logo + navigation links)
-  - A main content area (welcome text, program cards, events table)
+  - A main content area (welcome text, program cards, events list)
   - A sidebar (hours, contact info, quick links)
   - A footer
 
@@ -32,15 +39,9 @@ Setup:
 3. Open Chrome DevTools and turn on the device toolbar (Ctrl+Shift+M)
 4. Scroll to the bottom of style.css — that is where you will work
 
-Reminder — Media Query Syntax:
+Reminder — Media Query Syntax (min-width only):
 
-  @media (max-width: 768px) {
-    .selector {
-      property: value;
-    }
-  }
-
-  @media (min-width: 1024px) {
+  @media (min-width: 481px) {
     .selector {
       property: value;
     }
@@ -49,31 +50,32 @@ Reminder — Media Query Syntax:
 
 Lab Tasks:
 
-Task 1 — Tablet breakpoint (max-width: 768px)
-  a) Stack the page layout vertically (sidebar below main content)
-  b) Make the sidebar stretch to full width
-  c) Reduce the h1 font-size to 1.5rem
+Task 1 — Larger phones and small tablets (min-width: 481px)
+  a) Make the menu bar horizontal (logo left, links right)
+  b) Change the menu bar background color to #2c5f2d
+  c) Allow cards to sit side by side (two per row)
+  d) Show the Quick Links section in the sidebar
 
-Task 2 — Phone breakpoint (max-width: 480px)
-  a) Stack the menu bar vertically (logo on top, links below)
-  b) Center the menu links and reduce the gap between them
-  c) Make the program cards stack in a single column
-  d) Reduce the table text and padding so it fits on a small screen
+Task 2 — Tablets and laptops (min-width: 769px)
+  a) Put the main content and sidebar side by side
+  b) Give the main content more space than the sidebar
+  c) Increase the h1 font-size to 1.75rem
+  d) Show each event on a single row instead of wrapping
 
-Task 3 — Large desktop (min-width: 1024px)
+Task 3 — Large desktops (min-width: 1024px)
   a) Increase h1 font-size to 3rem
   b) Increase the menu link font-size to 1.5rem
 
 Testing Checklist:
-  [ ] At 1200px wide: large headings, side-by-side layout, bigger nav text
-  [ ] At 768px wide: sidebar stacks below main content, smaller h1
-  [ ] At 480px wide: menu stacks vertically, single-column cards, smaller table
+  [ ] At 375px wide: stacked menu, single-column cards, Quick Links hidden
+  [ ] At 481px wide: horizontal menu, two-column cards, Quick Links visible
+  [ ] At 769px wide: sidebar beside main content, events on one line
+  [ ] At 1024px wide: large headings, bigger nav text
   [ ] No horizontal scrollbar at any width
   [ ] All links are still clickable and readable at every size
 
 Bonus Challenges:
-  - Hide the sidebar Quick Links section on screens under 480px
-  - Change the menu bar background color at the phone breakpoint
-  - Make the events table scroll horizontally on very small screens
+  - On larger phones (481px+), lay out event details on one line
+  - On desktops (769px+), add more gap between the menu links
 
 -->
