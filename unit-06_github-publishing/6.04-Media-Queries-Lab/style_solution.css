@@ -1,0 +1,270 @@
+/* ============================================================
+   6.04 Media Queries Lab — Solution Stylesheet
+   ============================================================ */
+
+
+/* ----- RESET & BASE ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* ----- MENU BAR ----- */
+
+.menu-bar {
+  background-color: #2c5f2d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.menu-links a:hover {
+  background-color: #1a3d1b;
+  border-radius: 4px;
+}
+
+
+/* ----- PAGE LAYOUT ----- */
+
+.page-layout {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #eaf4e8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+  color: #2c5f2d;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #2c5f2d;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+
+/* ----- CARD GRID ----- */
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  flex: 1 1 220px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+
+/* ----- EVENTS TABLE ----- */
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.events-table th,
+.events-table td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.events-table th {
+  background-color: #2c5f2d;
+  color: white;
+}
+
+.events-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* ----- SIDEBAR ----- */
+
+.sidebar section {
+  margin-bottom: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 4px 0;
+}
+
+.sidebar a {
+  color: #2c5f2d;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+
+/* ----- FOOTER ----- */
+
+.site-footer {
+  background-color: #2c5f2d;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+
+/* ============================================================
+   MEDIA QUERIES — SOLUTIONS
+   ============================================================ */
+
+
+/* ----- TASK 1: Tablet (768px and below) ----- */
+
+@media (max-width: 768px) {
+
+  /* a) Stack the page layout vertically */
+  .page-layout {
+    flex-direction: column;
+  }
+
+  /* b) Make the sidebar full width */
+  .sidebar {
+    flex: auto;
+  }
+
+  /* c) Reduce the h1 font-size */
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ----- TASK 2: Phone (480px and below) ----- */
+
+@media (max-width: 480px) {
+
+  /* a) Stack the menu bar vertically */
+  .menu-bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+
+  /* b) Center the menu links and reduce gap */
+  .menu-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* c) Make cards stack in a single column */
+  .card {
+    flex-basis: 100%;
+  }
+
+  /* d) Reduce table font-size and cell padding */
+  .events-table {
+    font-size: 0.875rem;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 6px 8px;
+  }
+
+  /* BONUS: Hide the Quick Links section */
+  .sidebar section:last-child {
+    display: none;
+  }
+
+  /* BONUS: Change menu bar background color */
+  .menu-bar {
+    background-color: #1a3d1b;
+  }
+
+  /* BONUS: Make the events table scroll horizontally */
+  #events {
+    overflow-x: auto;
+  }
+}
+
+
+/* ----- TASK 3: Large desktop (1024px and above) ----- */
+
+@media (min-width: 1024px) {
+
+  /* a) Increase h1 font-size */
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  /* b) Increase menu link font-size */
+  .menu-links a {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,265 @@
+/* ============================================================
+   6.04 Media Queries Lab — Starter Stylesheet
+   ============================================================
+
+   DO NOW:
+   Open index.html in your browser. Resize the window from wide to narrow.
+   Notice what breaks or looks bad at small sizes.
+
+   YOUR TASK:
+   Add CSS rules and media queries to this file so the page looks good
+   at ALL screen sizes. Do NOT edit index.html.
+
+   INSTRUCTIONS:
+   1. Read through the base styles below to understand what is already set.
+   2. Scroll to the bottom of this file — that is where you will write
+      your media queries.
+   3. Use the Chrome DevTools device toolbar (Ctrl+Shift+M or Cmd+Shift+M)
+      to test different screen widths as you work.
+
+   REFERENCE — Media Query Syntax:
+
+      @media (max-width: 768px) {
+        .example {
+          font-size: 0.875rem;
+        }
+      }
+
+   Common breakpoints:
+      max-width: 480px   — small phones
+      max-width: 768px   — phones and small tablets
+      max-width: 1024px  — tablets and small laptops
+
+   ============================================================ */
+
+
+/* ----- RESET & BASE ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* ----- MENU BAR ----- */
+
+.menu-bar {
+  background-color: #2c5f2d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.menu-links a:hover {
+  background-color: #1a3d1b;
+  border-radius: 4px;
+}
+
+
+/* ----- PAGE LAYOUT ----- */
+
+.page-layout {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #eaf4e8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+  color: #2c5f2d;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #2c5f2d;
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+
+/* ----- CARD GRID ----- */
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  flex: 1 1 220px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+
+/* ----- EVENTS TABLE ----- */
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.events-table th,
+.events-table td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.events-table th {
+  background-color: #2c5f2d;
+  color: white;
+}
+
+.events-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* ----- SIDEBAR ----- */
+
+.sidebar section {
+  margin-bottom: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 4px 0;
+}
+
+.sidebar a {
+  color: #2c5f2d;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+
+/* ----- FOOTER ----- */
+
+.site-footer {
+  background-color: #2c5f2d;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+
+/* ============================================================
+   YOUR MEDIA QUERIES GO BELOW
+   ============================================================
+
+   TASK 1 — Tablet breakpoint (max-width: 768px)
+   Write a media query that makes the following changes
+   when the screen is 768px wide or less:
+
+   a) Stack the page layout vertically
+      Hint: change .page-layout flex-direction to column
+
+   b) Make the sidebar full width
+      Hint: remove the fixed flex value on .sidebar
+
+   c) Reduce the h1 font-size to 1.5rem
+
+
+   TASK 2 — Phone breakpoint (max-width: 480px)
+   Write a media query that makes the following changes
+   when the screen is 480px wide or less:
+
+   a) Stack the menu bar vertically so the logo is above the links
+      Hint: change .menu-bar flex-direction to column
+
+   b) Center the menu links and reduce the gap between them
+      Hint: center .menu-links with justify-content and reduce gap
+
+   c) Make cards stack in a single column
+      Hint: change .card flex-basis to 100%
+
+   d) Reduce table font-size to 0.875rem and cell padding to 6px 8px
+      so the table fits on a small screen
+
+
+   TASK 3 — Large desktop (min-width: 1024px)
+   Write a media query for screens 1024px wide or more:
+
+   a) Increase h1 font-size to 2.25rem
+   b) Increase .menu-links a font-size to 1.125rem
+
+
+   BONUS CHALLENGES:
+
+   - Hide the sidebar Quick Links section on screens under 480px
+     Hint: use display: none on the right element
+
+   - Add a background color change to the menu bar at the phone
+     breakpoint so users have a visual cue they are on a small screen
+
+   - Make the events table scroll horizontally on small screens
+     instead of shrinking. Wrap it in a container if needed —
+     or use overflow-x: auto on the table's parent section
+
+   ============================================================ */
