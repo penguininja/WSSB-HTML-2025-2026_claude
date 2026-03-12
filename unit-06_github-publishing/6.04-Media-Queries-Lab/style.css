@@ -258,7 +258,7 @@ p {
       What flex-direction does .page-layout need?
 
    b) Give the main content more space than the sidebar
-      What flex value makes .main-content take up 3x the space?
+      What flex value makes .main-content take up 2x the space?
       What flex value keeps .sidebar at a fixed proportion?
 
    c) Increase the h1 font-size to 1.75rem
@@ -266,20 +266,14 @@ p {
    d) Show each event in a single row instead of wrapping
       What flex-wrap value prevents wrapping?
 
+   e) Add more gap between the menu links
+      What CSS property needs to be updated to add more gap?
+
 
    TASK 3 — Large desktops (min-width: 1024px)
    Write a media query for screens 1024px wide or more:
 
    a) Increase h1 font-size to 3rem
    b) Increase .menu-links a font-size to 1.5rem
-
-
-   BONUS CHALLENGES:
-
-   - On larger phones (481px+), make the event dates and names
-     sit on one line with the details on the right
-     What flex-wrap value and width values could make this work?
-
-   - On desktops (769px+), add more gap between the menu links
 
    ============================================================ */

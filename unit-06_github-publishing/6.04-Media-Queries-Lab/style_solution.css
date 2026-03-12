@@ -234,7 +234,7 @@ p {
 
   /* b) Give main content more space than the sidebar */
   .main-content {
-    flex: 3;
+    flex: 2;
   }
 
   .sidebar {
@@ -251,7 +251,7 @@ p {
     flex-wrap: nowrap;
   }
 
-  /* BONUS: Add more gap between menu links */
+  /* e) Add more gap between menu links */
   .menu-links {
     gap: 24px;
   }
