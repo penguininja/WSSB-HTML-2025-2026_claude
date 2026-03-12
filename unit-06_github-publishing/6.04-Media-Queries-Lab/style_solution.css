@@ -238,7 +238,7 @@ p {
   }
 
   /* BONUS: Hide the Quick Links section */
-  .sidebar section:last-child {
+  .sidebar section#quick-links {
     display: none;
   }
 
@@ -260,11 +260,11 @@ p {
 
   /* a) Increase h1 font-size */
   h1 {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   /* b) Increase menu link font-size */
   .menu-links a {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }

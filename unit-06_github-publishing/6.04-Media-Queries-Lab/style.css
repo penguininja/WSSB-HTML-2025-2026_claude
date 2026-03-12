@@ -218,10 +218,10 @@ p {
    when the screen is 768px wide or less:
 
    a) Stack the page layout vertically
-      Hint: change .page-layout flex-direction to column
+      Hint: .page-layout needs what value for flex-direction?
 
    b) Make the sidebar full width
-      Hint: remove the fixed flex value on .sidebar
+      Hint: original flex value is set to 1, what can it be changed to?
 
    c) Reduce the h1 font-size to 1.5rem
 
@@ -231,13 +231,13 @@ p {
    when the screen is 480px wide or less:
 
    a) Stack the menu bar vertically so the logo is above the links
-      Hint: change .menu-bar flex-direction to column
+      Hint: .menu-bar needs what value for flex-direction?
 
    b) Center the menu links and reduce the gap between them
-      Hint: center .menu-links with justify-content and reduce gap
+      Hint: .menu-links needs what in justify-content? What gap value?
 
    c) Make cards stack in a single column
-      Hint: change .card flex-basis to 100%
+      Hint: .card needs what value for flex-basis?
 
    d) Reduce table font-size to 0.875rem and cell padding to 6px 8px
       so the table fits on a small screen
@@ -246,14 +246,14 @@ p {
    TASK 3 — Large desktop (min-width: 1024px)
    Write a media query for screens 1024px wide or more:
 
-   a) Increase h1 font-size to 2.25rem
-   b) Increase .menu-links a font-size to 1.125rem
+   a) Increase h1 font-size to 3rem
+   b) Increase .menu-links a font-size to 1.5rem
 
 
    BONUS CHALLENGES:
 
    - Hide the sidebar Quick Links section on screens under 480px
-     Hint: use display: none on the right element
+     Hint: what value for display causes it to disappear? What element do we want to hide?
 
    - Add a background color change to the menu bar at the phone
      breakpoint so users have a visual cue they are on a small screen
