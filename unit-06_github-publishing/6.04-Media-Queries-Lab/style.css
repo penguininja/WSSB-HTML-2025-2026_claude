@@ -245,7 +245,8 @@ p {
    b) Change the menu bar background color to #2c5f2d
 
    c) Allow the cards to sit side by side
-      What flex-basis value on .card lets two cards fit in a row?
+      Set flex-basis on .card using calc().
+      Each card should take up half the width — how do you account for the gap?
 
    d) Show the Quick Links section in the sidebar
       What display value makes a hidden element visible again?
