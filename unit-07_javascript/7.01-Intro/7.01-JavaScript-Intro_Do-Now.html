@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.01 JavaScript Do Now</title>
+</head>
+<body>
+
+<!--
+7.01 JavaScript Introduction - Do Now
+
+Look at this webpage and try clicking around. Notice what happens when you interact with different elements. You don't need to understand the code yet - just explore and observe the behavior.
+
+Questions to think about:
+- What happens when you click the button?
+- How is this different from what HTML and CSS can do?
+- What other interactive features have you seen on websites?
+-->
+
+<h1 id="title">Welcome to JavaScript!</h1>
+<p>This page demonstrates what JavaScript can do.</p>
+
+<button onclick="changeTitle()">Change the Title</button>
+<button onclick="changeColor()">Change Background Color</button>
+<button onclick="showTime()">Show Current Time</button>
+
+<p id="time-display"></p>
+<p id="click-counter">Button clicks: 0</p>
+
+<script>
+  let clickCount = 0;
+  
+  function changeTitle() {
+    const title = document.getElementById('title');
+    title.textContent = 'JavaScript is Interactive!';
+    countClick();
+  }
+  
+  function changeColor() {
+    document.body.style.backgroundColor = getRandomColor();
+    countClick();
+  }
+  
+  function showTime() {
+    const timeDisplay = document.getElementById('time-display');
+    const now = new Date();
+    timeDisplay.textContent = 'Current time: ' + now.toLocaleTimeString();
+    countClick();
+  }
+  
+  function getRandomColor() {
+    const colors = ['lightblue', 'lightgreen', 'lightyellow', 'lightpink', 'lightcoral'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+  
+  function countClick() {
+    clickCount++;
+    document.getElementById('click-counter').textContent = 'Button clicks: ' + clickCount;
+  }
+</script>
+
+</body>
+</html>
