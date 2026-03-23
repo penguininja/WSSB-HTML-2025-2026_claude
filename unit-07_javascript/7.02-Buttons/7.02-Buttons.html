@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.02 JavaScript Buttons</title>
+</head>
+<body>
+
+<!--
+7.02 JavaScript Buttons and Event Listeners
+
+Yesterday you learned how JavaScript can change content when a page loads. Today you'll
+learn how to make JavaScript respond to user interactions like button clicks.
+
+Event Listeners:
+Event listeners "listen" for user actions (clicks, keyboard input, etc.) and run JavaScript
+code when those actions happen.
+
+Basic Event Listener Example:
+-->
+
+<main>
+  <h1 id="greeting" aria-live="polite">Hello, world!</h1>
+  <p>Welcome to interactive JavaScript!</p>
+  <button id="change-btn">Click me to change the greeting!</button>
+
+  <p>When you click the button above, JavaScript changes the heading text.</p>
+</main>
+
+<script>
+  // Step 1: Find the elements
+  const heading = document.querySelector('#greeting');
+  const button = document.querySelector('#change-btn');
+
+  // Step 2: Create a function that does something
+  function changeGreeting() {
+    heading.textContent = 'You clicked the button!';
+  }
+
+  // Step 3: Connect the button to the function
+  button.addEventListener('click', changeGreeting);
+</script>
+
+<!--
+How Event Listeners Work:
+
+1. document.querySelector() - finds HTML elements (same as before)
+2. function - creates a block of code that can run later
+3. addEventListener('click', functionName) - connects button clicks to your function
+
+Event Listener Syntax:
+element.addEventListener('event', functionName);
+
+Common events:
+- 'click' - user clicks the element
+- 'mouseover' - user hovers over the element
+- 'keydown' - user presses a key
+
+The aria-live attribute tells screen readers when content changes.
+Add it to elements that JavaScript will modify:
+- aria-live="polite" - announces changes when user is not busy (most common)
+- aria-live="assertive" - announces changes immediately (for urgent updates)
+- Example: <h1 id="greeting" aria-live="polite">Hello, world!</h1>
+
+7.02 Lab
+
+Use the provided lab files to create interactive buttons:
+
+1. Open the lab folder with index.html and script.js
+2. Edit script.js to add event listeners for the buttons
+3. Make each button change different content on the page
+
+Requirements:
+- At least 2 working buttons
+- Each button should change different text or content
+- Use addEventListener() like in the example above
+
+Bonus: Try changing other properties like innerHTML, style.color, or style.display
+-->
+
+</body>
+</html>
