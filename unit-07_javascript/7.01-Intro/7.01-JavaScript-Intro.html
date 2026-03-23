@@ -14,7 +14,7 @@ JavaScript makes websites interactive. While HTML creates structure and CSS adds
 
 JavaScript can:
 - Change content on the page
-- Respond to user clicks and interactions  
+- Respond to user clicks and interactions
 - Update information without reloading the page
 - Create animations and effects
 
@@ -22,26 +22,27 @@ How to add JavaScript:
 1. External file: <script src="script.js"></script>
 2. Internal: <script>code here</script>
 
-Basic JavaScript Example (like button example 1):
+Basic JavaScript Example:
 -->
 
 <main>
   <h1 id="greeting">Hello, world!</h1>
   <p>Welcome to JavaScript!</p>
-  
+
   <p>JavaScript changed the text above from "Hello, world!" to "Hello, class!" when the page loaded.</p>
 </main>
 
 <script>
   // This JavaScript finds the heading and changes its text
-  const heading = document.querySelector('#greeting');
-  heading.textContent = 'Hello, class!';
+  const heading1 = document.querySelector('#greeting');
+  heading1.textContent = 'Hello, class!';
 </script>
 
 <!--
 Key JavaScript Concepts:
 
 1. document.querySelector() - finds HTML elements
+(Case is important!)
 2. textContent - changes the text inside an element
 3. Elements have IDs (#greeting) that JavaScript can target
 
@@ -52,22 +53,10 @@ JavaScript Syntax:
 
 7.01 Lab
 
-Create a simple webpage that uses JavaScript to change text:
+Use the attached lab files. Edit script.js to change the content of at least three elements on the page.
 
-1. Create an HTML page with:
-   - An h1 with id="message"
-   - A paragraph with some text
-   
-2. Add JavaScript that changes the h1 text when the page loads
+Bonus: Try adding new elements to index.html to update!
 
-3. Try changing other elements too
-
-Example:
-<h1 id="message">Original Text</h1>
-<script>
-  const message = document.querySelector('#message');
-  message.textContent = 'New Text!';
-</script>
 -->
 
 </body>
