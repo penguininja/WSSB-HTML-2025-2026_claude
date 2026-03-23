@@ -35,3 +35,6 @@ function changeBgColor() {
 
 // Bonus Example 2
 // Change the text color of the title (hint, you'll need to add a new button to index.html, and a new function!)
+
+// Bonus 3
+// Try styling the button with CSS! What do you notice about the browser's "default styles"?
