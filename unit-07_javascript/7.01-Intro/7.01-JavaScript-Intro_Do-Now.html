@@ -17,42 +17,42 @@ Questions to think about:
 - What other interactive features have you seen on websites?
 -->
 
-<h1 id="title">Welcome to JavaScript!</h1>
+<h1 id="title" aria-live="polite">Welcome to JavaScript!</h1>
 <p>This page demonstrates what JavaScript can do.</p>
 
 <button onclick="changeTitle()">Change the Title</button>
 <button onclick="changeColor()">Change Background Color</button>
 <button onclick="showTime()">Show Current Time</button>
 
-<p id="time-display"></p>
-<p id="click-counter">Button clicks: 0</p>
+<p id="time-display" aria-live="polite"></p>
+<p id="click-counter" aria-live="polite">Button clicks: 0</p>
 
 <script>
   let clickCount = 0;
-  
+
   function changeTitle() {
     const title = document.getElementById('title');
-    title.textContent = 'JavaScript is Interactive!';
+    title.textContent = 'This is the new title!';
     countClick();
   }
-  
+
   function changeColor() {
     document.body.style.backgroundColor = getRandomColor();
     countClick();
   }
-  
+
   function showTime() {
     const timeDisplay = document.getElementById('time-display');
     const now = new Date();
     timeDisplay.textContent = 'Current time: ' + now.toLocaleTimeString();
     countClick();
   }
-  
+
   function getRandomColor() {
     const colors = ['lightblue', 'lightgreen', 'lightyellow', 'lightpink', 'lightcoral'];
     return colors[Math.floor(Math.random() * colors.length)];
   }
-  
+
   function countClick() {
     clickCount++;
     document.getElementById('click-counter').textContent = 'Button clicks: ' + clickCount;
