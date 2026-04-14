@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.03 JavaScript + CSS</title>
+</head>
+<body>
+
+<!--
+7.03 JavaScript + CSS: States and classList
+
+What is a "state"?
+A state is a condition something can be in. A light switch is either on or off.
+Web page elements have states too:
+  - A menu can be open or closed
+  - Text can be highlighted or normal
+  - A page can be in dark mode or light mode
+
+The big idea:
+  CSS defines what each state LOOKS like.
+  JavaScript decides which state is currently ACTIVE.
+
+Instead of writing style changes directly in JavaScript like this:
+  document.body.style.backgroundColor = 'black';
+
+...we write a CSS class that describes the state:
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+Then JavaScript just adds or removes that class.
+This keeps our code organized: CSS handles appearance, JS handles behavior.
+
+
+classList.add() - turning a state ON
+  element.classList.add('class-name');
+  This is the same as writing class="class-name" in your HTML, but JavaScript does it live.
+
+classList.remove() - turning a state OFF
+  element.classList.remove('class-name');
+  Removes the class. All the CSS rules inside that class stop applying.
+
+7.03 Lab
+
+Use the attached lab files. Edit script.js to:
+  2. Use classList.add() to turn the "large" state on with a button
+  3. Use classList.remove() to turn it off with another button
+
+Bonus 1: Add a new state for dark mode, or something else (you can use new buttons)
+Bonus 2: Add a new set of states for something else, like changing the font, uppercase, highlight, etc.
+Bonus 3: Add a CSS transition property to make your state change animate smoothly
+-->
