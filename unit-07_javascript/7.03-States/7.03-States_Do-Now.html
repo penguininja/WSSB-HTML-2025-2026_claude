@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.03 JS + CSS Do Now</title>
+</head>
+<body>
+
+<h1>Do Now</h1>
+
+<button id="dark-btn">Dark Mode On</button>
+<button id="light-btn">Dark Mode Off</button>
+
+<style>
+  .dark-mode {
+    background-color: #111;
+    color: #eee;
+  }
+</style>
+
+<script>
+  const darkBtn = document.querySelector('#dark-btn');
+  const lightBtn = document.querySelector('#light-btn');
+
+  darkBtn.addEventListener('click', function () {
+    document.body.classList.add('dark-mode');
+    console.log('dark-mode-active');
+  });
+
+  lightBtn.addEventListener('click', function () {
+    document.body.classList.remove('dark-mode');
+    console.log('dark-mode-inactive');
+  });
+</script>
+
+</body>
+</html>
