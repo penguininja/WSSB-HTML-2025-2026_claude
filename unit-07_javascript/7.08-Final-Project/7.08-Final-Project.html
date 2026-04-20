@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.08 Final Project: Hamburger Menu</title>
+</head>
+<body>
+
+<!--
+7.08 Final Project: Hamburger Menu
+
+A "hamburger" menu is a button (often ☰) that toggles a navigation list open
+and closed. It's common on mobile sites where there isn't room to show all
+nav links at once.
+
+Your goal is to build one from scratch using everything from Unit 7:
+  - A button that shows/hides a nav list (7.04)
+  - ARIA attributes that describe the state to screen readers (7.05)
+  - A CSS transition so the menu opens smoothly (7.06)
+  - The Escape key closes the menu (7.07)
+
+Requirements:
+
+HTML:
+  - A <button> that acts as the toggle
+  - A <nav> element containing a <ul> list of at least 3 links
+  - The nav should be hidden by default
+
+CSS:
+  - The nav starts collapsed (max-height: 0, opacity: 0)
+  - An .open class expands it with a transition
+  - Style it however you like
+
+JavaScript:
+  - Clicking the button opens/closes the nav
+  - Pressing Escape closes the nav
+  - aria-expanded on the button stays in sync
+  - aria-hidden on the nav stays in sync
+
+ARIA checklist:
+  Button:  aria-expanded="false"   (update to "true" when open)
+           aria-controls="[nav id]"
+           aria-label="Toggle navigation"  (describes the button's purpose)
+  Nav:     aria-hidden="true"      (update to "false" when open)
+           id matching the button's aria-controls value
+
+Starter HTML structure (you fill in the CSS and JavaScript):
+
+  <header>
+    <button id="menu-btn" aria-expanded="false" aria-controls="main-nav"
+            aria-label="Toggle navigation">
+      &#9776;
+    </button>
+  </header>
+
+  <nav id="main-nav" aria-hidden="true">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+&#9776; is the HTML code for the ☰ hamburger icon character.
+
+Bonus 1: Return focus to the button after closing with Escape
+  Hint: document.querySelector('#menu-btn').focus();
+
+Bonus 2: Close the menu when the user clicks a link inside it
+
+Bonus 3: Add a visible focus style to the button so keyboard users can see
+  where they are (look up CSS :focus-visible)
+-->
+
+</body>
+</html>

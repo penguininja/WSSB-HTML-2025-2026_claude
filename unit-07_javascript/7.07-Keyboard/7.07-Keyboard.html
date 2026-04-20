@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.07 Keyboard Interactions</title>
+  <style>
+    #details {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #details.open {
+      max-height: 200px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!--
+7.07 Keyboard Interactions
+
+Not everyone uses a mouse. Keyboard users (and screen reader users) navigate
+pages using Tab, Enter, Space, and Escape. JavaScript can listen for any key.
+
+In 7.02 you listened for 'click'. Keyboards use a different event: 'keydown'.
+
+  document.addEventListener('keydown', handleKey);
+
+The event object:
+  When a key is pressed, the browser passes an event object to your function.
+  event.key tells you which key was pressed as a string.
+
+  Common values:
+    'Escape'     - the Escape key
+    'Enter'      - the Enter key
+    ' '          - the spacebar (a space character)
+    'ArrowDown'  - the down arrow key
+
+Closing a panel with Escape:
+  A common pattern is to close any open panel when the user presses Escape.
+  This matches how native menus behave and is expected by keyboard users.
+
+Example:
+-->
+
+<main>
+  <button id="toggle-btn" aria-expanded="false" aria-controls="details">
+    Show / Hide Details
+  </button>
+
+  <div id="details" aria-hidden="true">
+    <p>Here are the details! Press Escape to close this panel.</p>
+  </div>
+</main>
+
+<script>
+  const button = document.querySelector('#toggle-btn');
+  const details = document.querySelector('#details');
+
+  function openDetails() {
+    details.classList.add('open');
+    button.setAttribute('aria-expanded', 'true');
+    details.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeDetails() {
+    details.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+    details.setAttribute('aria-hidden', 'true');
+  }
+
+  function toggleDetails() {
+    if (details.classList.contains('open')) {
+      closeDetails();
+    } else {
+      openDetails();
+    }
+  }
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeDetails();
+    }
+  }
+
+  button.addEventListener('click', toggleDetails);
+  document.addEventListener('keydown', handleKeydown);
+</script>
+
+<!--
+What's new:
+
+The toggle logic is now split into openDetails() and closeDetails() functions.
+This lets us reuse closeDetails() from both the button click and the Escape key
+without duplicating code.
+
+document.addEventListener('keydown', handleKeydown) listens for ANY key press
+on the entire page. Inside handleKeydown we check event.key to filter to just
+the Escape key.
+
+7.07 Lab
+
+Update your 7.06 lab to support keyboard interactions:
+1. Split your toggle logic into open and close functions
+2. Add a document keydown listener that calls close when Escape is pressed
+3. Test it: open the panel, then press Escape
+
+Bonus 1: After pressing Escape, move focus back to the button.
+  Hint: button.focus()
+
+Bonus 2: Add a keydown listener that also closes the panel when the user
+  presses Tab past the last item inside it.
+-->
+
+</body>
+</html>

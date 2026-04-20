@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.06 Transitions</title>
+  <style>
+    #details {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #details.open {
+      max-height: 200px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!--
+7.06 Transitions
+
+display: none works, but it can't animate. The content just snaps on and off.
+To get a smooth open/close effect, we need a different approach.
+
+The problem with display: none:
+  CSS transitions only work on properties with numeric values. display: none
+  has no "in between" value, so there is nothing to animate.
+
+The solution: max-height and opacity
+
+Instead of hiding with display, we start the element collapsed and invisible:
+  Closed:  max-height: 0;  opacity: 0;
+  Open:    max-height: 200px;  opacity: 1;
+
+overflow: hidden is needed so content doesn't bleed out of the element
+while max-height is animating toward zero.
+
+The CSS transition property does the animating:
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  When either property changes, animate it over 0.3 seconds.
+
+Because the content is still on the page (just invisible), screen readers
+could still find it — so aria-hidden is still required here.
+
+Example:
+-->
+
+<main>
+  <button id="toggle-btn" aria-expanded="false" aria-controls="details">
+    Show / Hide Details
+  </button>
+
+  <div id="details" aria-hidden="true">
+    <p>Here are the details! They fade and slide in smoothly.</p>
+  </div>
+</main>
+
+<script>
+  const button = document.querySelector('#toggle-btn');
+  const details = document.querySelector('#details');
+
+  function toggleDetails() {
+    if (details.classList.contains('open')) {
+      details.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+      details.setAttribute('aria-hidden', 'true');
+    } else {
+      details.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+      details.setAttribute('aria-hidden', 'false');
+    }
+  }
+
+  button.addEventListener('click', toggleDetails);
+</script>
+
+<!--
+What changed from 7.05:
+  - No more display: none or .hidden class
+  - The element starts at max-height: 0 and opacity: 0 (invisible but in the DOM)
+  - Adding the "open" class transitions it to max-height: 200px and opacity: 1
+  - aria-hidden is now essential because the content stays in the DOM
+
+Note on max-height:
+  Set it higher than you expect the content to be. If content is 50px tall,
+  200px works fine — the animation goes to the actual height, not to 200px.
+
+7.06 Lab
+
+Update your 7.05 lab to use transitions:
+1. Remove the .hidden class and display: none from your CSS
+2. Add max-height: 0, opacity: 0, overflow: hidden, and transition to your content
+3. Create an .open class that sets max-height and opacity to visible values
+4. Update JavaScript to toggle "open" instead of "hidden"
+5. Make sure aria-hidden is still being updated
+
+Bonus: Try different transition durations and easing values.
+  Common options: ease, ease-in, ease-out, linear
+Bonus 2: Transitioning max-height has disadvantages. If you don't know the actual height
+  of the content, you have to guess. Use scrollHeight in Javascript to determine the
+  actual height of the content and apply it as an inline style. Or use CSS Grid for
+  a CSS-only solution!
+-->
+
+</body>
+</html>
