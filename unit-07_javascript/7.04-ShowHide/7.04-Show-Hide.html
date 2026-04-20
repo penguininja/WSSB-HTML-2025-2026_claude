@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.04 Show and Hide</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!--
+7.04 Show and Hide
+
+In 7.03 you used classList.add() and classList.remove() with separate buttons
+to style elememnts on the page. In this lesson we'll be showing and hiding
+whole sections of content, using a single button as a Show/Hide toggle.
+
+The simple way to hide something with CSS:
+  .hidden {
+    display: none;
+  }
+
+When an element has the "hidden" class, it disappears from the page.
+When the class is removed, it comes back.
+
+display: none removes the element completely — screen readers ignore it,
+so no extra work is needed for accessibility.
+
+if/else — making a decision in JavaScript:
+  An if/else checks a condition and runs different code depending on the answer.
+
+  if (condition) {
+    // runs when condition is true
+  } else {
+    // runs when condition is false
+  }
+
+classList.contains() — checking whether a class is present:
+  element.classList.contains('hidden')
+  Returns true if the class is there, false if it isn't.
+
+Putting them together:
+  if (details.classList.contains('hidden')) {
+    details.classList.remove('hidden');   // it's hidden — show it
+  } else {
+    details.classList.add('hidden');      // it's visible — hide it
+  }
+
+Basic Show/Hide Example:
+-->
+
+<main>
+  <button id="toggle-btn">Show / Hide Details</button>
+
+  <div id="details" class="hidden">
+    <p>Here are the hidden details! They only appear when you click the button.</p>
+  </div>
+</main>
+
+<script>
+  const button = document.querySelector('#toggle-btn');
+  const details = document.querySelector('#details');
+
+  function toggleDetails() {
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+    } else {
+      details.classList.add('hidden');
+    }
+  }
+
+  button.addEventListener('click', toggleDetails);
+</script>
+
+<!--
+What's happening:
+1. The CSS class "hidden" sets display: none, making the element invisible
+2. classList.contains('hidden') checks whether the class is currently there
+3. If it's hidden, we remove the class — if it's visible, we add it back
+4. One function handles both showing AND hiding by making a decision
+
+Coming up:
+display: none works great, but it can't animate. In 7.06 you'll learn to use
+opacity or max-height instead so content can fade or slide in. That approach
+requires extra accessibility work, which we'll cover first in 7.05.
+
+7.04 Lab
+1. Add a second section of hidden content to the page
+2. Add a second button that shows/hides it using if/else
+3. Both buttons should work independently of each other
+4. Now try adding another section of hidden content from scratch!
+
+Bonus 1: Can you make ONE button show/hide TWO different elements at the same time?
+Bonus 2: Make it so that only one section of hidden content is visible at a time.
+-->
+
+</body>
+</html>

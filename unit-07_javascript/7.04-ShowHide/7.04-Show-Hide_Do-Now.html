@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.04 Do Now</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    header span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    #menu-btn {
+      background: none;
+      border: 2px solid white;
+      color: white;
+      font-size: 1.4rem;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #menu-btn:focus-visible {
+      outline: 3px solid #f0c040;
+      outline-offset: 2px;
+    }
+
+    #main-nav {
+      background-color: #16213e;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #main-nav.open {
+      max-height: 200px;
+      opacity: 1;
+    }
+
+    #main-nav ul {
+      list-style: none;
+      padding: 0.5rem 0;
+    }
+
+    #main-nav a {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      color: #e0e0e0;
+      text-decoration: none;
+    }
+
+    #main-nav a:hover {
+      background-color: #0f3460;
+      color: white;
+    }
+
+    main {
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span>My Website</span>
+  <button id="menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+</header>
+
+<nav id="main-nav" aria-hidden="true">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Welcome</h1>
+  <p>Click the menu button in the header to open the navigation.</p>
+</main>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const mainNav = document.querySelector('#main-nav');
+
+  function openNav() {
+    mainNav.classList.add('open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    mainNav.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeNav() {
+    mainNav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    mainNav.setAttribute('aria-hidden', 'true');
+  }
+
+  function toggleNav() {
+    if (mainNav.classList.contains('open')) {
+      closeNav();
+    } else {
+      openNav();
+    }
+  }
+
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      closeNav();
+      menuBtn.focus();
+    }
+  }
+
+  menuBtn.addEventListener('click', toggleNav);
+  document.addEventListener('keydown', handleKeydown);
+</script>
+
+</body>
+</html>

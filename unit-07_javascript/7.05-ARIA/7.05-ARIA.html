@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7.05 ARIA</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!--
+7.05 ARIA: Telling Screen Readers About State
+
+In 7.06 you'll learn to animate show/hide using opacity or max-height.
+The problem: those techniques don't remove content from the page, so screen
+readers can still find and read "hidden" content.
+
+ARIA (Accessible Rich Internet Applications) lets us describe state to screen
+readers in HTML attributes.
+
+Three ARIA attributes for show/hide:
+
+aria-expanded
+  Goes on the BUTTON. Tells screen readers whether the content is open.
+  aria-expanded="false"  (content is hidden)
+  aria-expanded="true"   (content is visible)
+
+aria-controls
+  Goes on the BUTTON. Points to the ID of the content it controls.
+  aria-controls="details"
+
+aria-hidden
+  Goes on the CONTENT. Hides it from screen readers when "true".
+  aria-hidden="true"   (screen readers skip this)
+  aria-hidden="false"  (screen readers can read this)
+
+How they work together:
+  - aria-expanded tells the user "this button opens/closes something"
+  - aria-controls says "specifically, it controls that element over there"
+  - aria-hidden on the content keeps screen readers in sync with what's visible
+
+Example:
+-->
+
+<main>
+  <button id="toggle-btn" aria-expanded="false" aria-controls="details">
+    Show / Hide Details
+  </button>
+
+  <div id="details" class="hidden" aria-hidden="true">
+    <p>Here are the details!</p>
+  </div>
+</main>
+
+<script>
+  const button = document.querySelector('#toggle-btn');
+  const details = document.querySelector('#details');
+
+  function toggleDetails() {
+    if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      button.setAttribute('aria-expanded', 'true');
+      details.setAttribute('aria-hidden', 'false');
+    } else {
+      details.classList.add('hidden');
+      button.setAttribute('aria-expanded', 'false');
+      details.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  button.addEventListener('click', toggleDetails);
+</script>
+
+<!--
+What's happening in the JavaScript:
+
+classList.contains('hidden') checks whether the class is currently there.
+  If the content is hidden, we remove the class and update ARIA to "open".
+  If the content is visible, we add the class back and update ARIA to "closed".
+
+setAttribute() updates an HTML attribute from JavaScript:
+  button.setAttribute('aria-expanded', 'true');
+  This is the same as writing aria-expanded="true" in the HTML, but live.
+
+7.05 Lab
+
+Start with your 7.04 lab. Add ARIA attributes:
+1. Add aria-expanded="false" and aria-controls="[id]" to each button
+2. Add aria-hidden="true" to each hidden content area
+3. Replace classList.toggle() with an if/else that updates the class AND the
+   ARIA attributes using setAttribute()
+4. Test it: open the page and toggle — inspect the HTML to see attributes change
+
+Bonus: Look up "aria-label". Add it to your buttons to give them a clearer name
+for screen readers (e.g., "Show navigation menu").
+-->
+
+</body>
+</html>
