@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Green Valley CC — Volunteer Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Green Valley Community Center</h1>
+    <p>Volunteer Sign-Up</p>
+  </header>
+
+  <main>
+    <!--
+    LAB INSTRUCTIONS
+    ================
+    Build the volunteer sign-up form below. Add your form elements
+    inside the <form> tag where indicated by each comment.
+
+    The JavaScript in form.js is already connected. When you click
+    "Send Sign-Up", it will open a pre-filled email — but only if
+    your form elements have the correct id and name attributes.
+
+    Do NOT edit form.js or the <script> tag at the bottom of this file.
+
+    Required ids and names for the JS to work:
+      id="volunteer-name"    (text input)
+      id="volunteer-email"   (email input)
+      name="program"         (radio button group)
+      name="days"            (checkbox group)
+      id="notes"             (textarea)
+    -->
+
+    <form id="signup-form">
+
+      <!-- ===== STEP 1: Text Inputs =====
+      Add two text inputs:
+
+      1. A label and text input for the volunteer's full name.
+         - label text: "Full Name"
+         - input: type="text", id="volunteer-name", name="volunteer-name"
+         - Add a placeholder like "Jane Smith"
+
+      2. A label and email input for the volunteer's email address.
+         - label text: "Email Address"
+         - input: type="email", id="volunteer-email", name="volunteer-email"
+         - Add a placeholder like "jane@example.com"
+      -->
+
+
+
+      <!-- ===== STEP 2: Radio Buttons =====
+      Add a group of radio buttons so the volunteer can choose ONE
+      program area they want to help with.
+
+      Add a <p> tag with the text: "Which program area would you like to volunteer with?"
+
+      Then add four radio buttons with name="program":
+        value="youth-arts"    label text: "Youth Arts"
+        value="adult-fitness" label text: "Adult Fitness"
+        value="senior-social" label text: "Senior Social"
+        value="tech-help"     label text: "Tech Help Desk"
+
+      Reminder: wrap each <input> and its text together in a <label> tag.
+      -->
+
+
+
+      <!-- ===== STEP 3: Checkboxes =====
+      Add a group of checkboxes so the volunteer can choose ALL the
+      days they are available. Multiple selections are allowed.
+
+      Add a <p> tag with the text: "Which days are you available? (check all that apply)"
+
+      Then add five checkboxes with name="days":
+        value="monday"    label text: "Monday"
+        value="tuesday"   label text: "Tuesday"
+        value="wednesday" label text: "Wednesday"
+        value="thursday"  label text: "Thursday"
+        value="friday"    label text: "Friday"
+      -->
+
+
+
+      <!-- ===== STEP 4: Textarea =====
+      Add a label and textarea for additional notes.
+        - label text: "Anything else you'd like us to know?"
+        - textarea: id="notes", name="notes", rows="4"
+        - Add a placeholder like "Tell us about yourself or any questions you have."
+      -->
+
+
+
+      <!-- ===== STEP 5: Submit Button =====
+      Add a submit button with the text "Send Sign-Up".
+      Use: <button type="submit">Send Sign-Up</button>
+      -->
+
+
+    </form>
+  </main>
+
+  <!-- JavaScript is provided — do not edit this line -->
+  <script src="form.js"></script>
+
+</body>
+</html>

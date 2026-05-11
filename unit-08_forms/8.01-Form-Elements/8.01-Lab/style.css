@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #2c5f2d;
+  color: white;
+  padding: 20px 32px;
+}
+
+header p {
+  font-size: 1.125rem;
+  margin-top: 4px;
+}
+
+main {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Radio and checkbox labels sit inline with their inputs */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+p {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  background-color: #2c5f2d;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a3d1b;
+}
+
+footer {
+  background-color: #2c5f2d;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 48px;
+}

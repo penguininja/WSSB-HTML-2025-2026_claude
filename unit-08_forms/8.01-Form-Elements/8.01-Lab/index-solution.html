@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Green Valley CC — Volunteer Sign-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Green Valley Community Center</h1>
+    <p>Volunteer Sign-Up</p>
+  </header>
+
+  <main>
+    <form id="signup-form">
+
+      <!-- STEP 1: Text Inputs -->
+      <label for="volunteer-name">Full Name</label>
+      <input type="text" id="volunteer-name" name="volunteer-name" placeholder="Jane Smith">
+
+      <label for="volunteer-email">Email Address</label>
+      <input type="email" id="volunteer-email" name="volunteer-email" placeholder="jane@example.com">
+
+      <!-- STEP 2: Radio Buttons -->
+      <p>Which program area would you like to volunteer with?</p>
+      <label><input type="radio" name="program" value="youth-arts"> Youth Arts</label>
+      <label><input type="radio" name="program" value="adult-fitness"> Adult Fitness</label>
+      <label><input type="radio" name="program" value="senior-social"> Senior Social</label>
+      <label><input type="radio" name="program" value="tech-help"> Tech Help Desk</label>
+
+      <!-- STEP 3: Checkboxes -->
+      <p>Which days are you available? (check all that apply)</p>
+      <label><input type="checkbox" name="days" value="monday"> Monday</label>
+      <label><input type="checkbox" name="days" value="tuesday"> Tuesday</label>
+      <label><input type="checkbox" name="days" value="wednesday"> Wednesday</label>
+      <label><input type="checkbox" name="days" value="thursday"> Thursday</label>
+      <label><input type="checkbox" name="days" value="friday"> Friday</label>
+
+      <!-- STEP 4: Textarea -->
+      <label for="notes">Anything else you'd like us to know?</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Tell us about yourself or any questions you have."></textarea>
+
+      <!-- STEP 5: Submit Button -->
+      <button type="submit">Send Sign-Up</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>Green Valley Community Center &middot; 123 Oak Street &middot; (555) 234-5678</p>
+  </footer>
+
+  <!-- JavaScript is provided — do not edit this line -->
+  <script src="form.js"></script>
+
+</body>
+</html>

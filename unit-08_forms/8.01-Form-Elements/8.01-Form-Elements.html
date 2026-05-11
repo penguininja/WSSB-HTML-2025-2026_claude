@@ -1,0 +1,173 @@
+<!--
+8.01 HTML Form Elements
+
+8.01 Do Now
+Think about a form you have filled out online — signing up for something,
+ordering food, or contacting a website. What kinds of inputs were on it?
+With a partner, list as many types of form inputs as you can think of.
+
+8.01 Lesson
+
+Forms are how websites collect information from users. Every login page,
+search bar, and sign-up sheet on the web is built with HTML form elements.
+
+The <form> tag wraps all the inputs together. When the user submits the
+form, the browser collects all the values inside it.
+
+Example:
+-->
+
+<form>
+  <!-- inputs go here -->
+</form>
+
+<!--
+Key attribute: action
+The action attribute tells the form where to send its data when submitted.
+In this class we will use JavaScript to handle form submission instead.
+
+=======================================================
+ELEMENT 1: Text Input  <input type="text">
+=======================================================
+
+A single-line box for short text like a name or email address.
+
+Important attributes:
+- type="text"  — tells the browser what kind of input this is
+- id           — connects this input to its <label> (explained below)
+- name         — the key used to identify this value when the form submits
+- placeholder  — light grey hint text that disappears when the user types
+
+Labels:
+Every input should have a <label> that describes it. The label's "for"
+attribute must match the input's "id". This is important for accessibility —
+screen readers announce the label when the user focuses the input.
+-->
+
+<label for="full-name">Full Name</label>
+<input type="text" id="full-name" name="full-name" placeholder="Jane Smith">
+
+<!--
+type="email" works just like type="text" but the browser checks that
+the value looks like a valid email address before submitting.
+-->
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="jane@example.com">
+
+<!--
+=======================================================
+ELEMENT 2: Radio Buttons  <input type="radio">
+=======================================================
+
+Radio buttons let the user pick exactly ONE option from a group.
+They are linked into a group by sharing the same "name" attribute.
+Only one radio in a group can be selected at a time.
+
+Use radio buttons when:
+- There are a small number of choices
+- The user must pick exactly one
+-->
+
+<p>Favorite season:</p>
+
+<label><input type="radio" name="season" value="spring"> Spring</label>
+<label><input type="radio" name="season" value="summer"> Summer</label>
+<label><input type="radio" name="season" value="fall"> Fall</label>
+<label><input type="radio" name="season" value="winter"> Winter</label>
+
+<!--
+Notice:
+- All four share name="season" — that is what links them into one group
+- Each has a different value — that is what gets submitted
+
+=======================================================
+ELEMENT 3: Checkboxes  <input type="checkbox">
+=======================================================
+
+Checkboxes let the user pick ANY NUMBER of options — zero, one, or many.
+Each checkbox is independent.
+
+Use checkboxes when:
+- Multiple selections are allowed
+- Each option can be on or off by itself
+-->
+
+<p>Which languages have you studied? (check all that apply)</p>
+
+<label><input type="checkbox" name="languages" value="spanish"> Spanish</label>
+<label><input type="checkbox" name="languages" value="french"> French</label>
+<label><input type="checkbox" name="languages" value="mandarin"> Mandarin</label>
+<label><input type="checkbox" name="languages" value="arabic"> Arabic</label>
+
+<!--
+=======================================================
+ELEMENT 4: Multi-line Text  <textarea>
+=======================================================
+
+A textarea is a resizable box for longer text like a message or description.
+Unlike <input>, textarea uses an opening and closing tag.
+
+Attributes:
+- rows  — how many lines tall the box appears
+- cols  — how many characters wide the box appears (usually controlled by CSS instead)
+-->
+
+<label for="comments">Additional Comments</label>
+<textarea id="comments" name="comments" rows="4" placeholder="Type your message here..."></textarea>
+
+<!--
+=======================================================
+ELEMENT 5: Submit Button
+=======================================================
+
+The submit button sends the form. Use type="submit" on a <button> tag.
+-->
+
+<button type="submit">Submit</button>
+
+<!--
+=======================================================
+PUTTING IT TOGETHER
+=======================================================
+
+All of the above inside one form:
+-->
+
+<form>
+  <label for="ex-name">Full Name</label>
+  <input type="text" id="ex-name" name="full-name" placeholder="Jane Smith">
+
+  <label for="ex-email">Email Address</label>
+  <input type="email" id="ex-email" name="email" placeholder="jane@example.com">
+
+  <p>Favorite season:</p>
+  <label><input type="radio" name="season" value="spring"> Spring</label>
+  <label><input type="radio" name="season" value="summer"> Summer</label>
+
+  <p>Languages studied:</p>
+  <label><input type="checkbox" name="languages" value="spanish"> Spanish</label>
+  <label><input type="checkbox" name="languages" value="french"> French</label>
+
+  <label for="ex-comments">Comments</label>
+  <textarea id="ex-comments" name="comments" rows="4"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<!--
+8.01 Activity
+
+With a partner, find a real form on a website (a sign-up page, a contact
+form, an order form, etc.). Identify:
+1. What input types does it use?
+2. Which inputs use labels?
+3. Are there radio buttons or checkboxes? What is each one used for?
+Be ready to share with the class.
+
+8.01 Lab
+See the 8.01-Form-Elements-Lab folder.
+You will build a volunteer sign-up form for the Green Valley Community Center.
+JavaScript is already provided — once you build the form correctly,
+clicking Submit will open a pre-filled email with the form data.
+-->
